@@ -1,0 +1,69 @@
+/****************************/
+/* charges new page begin */
+/****************************/
+#charges-new {
+	.charges-container
+	{
+		margin: 0 auto;
+		width: 200px;
+		height: 100px;
+		text-align: center;
+
+	}
+}
+#charges-new {
+	body, html
+	{
+		height: 100%;
+	}
+}
+
+#charges-new {
+	.wrapper-charges-new {
+		min-height: 100%;
+    height: auto !important;
+    height: 100%;
+    margin: 0 auto -45px;
+   }
+}
+/****************************/
+/* charges new page end */
+/****************************/
+
+/*  replace w charges name, currently orders ******>>>>>*/
+
+#orders-show 
+	{
+  .orders-show-container {
+    width: 650px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  #order-title {
+    font-size: 72px;
+    font-weight: 300;
+  }
+  .line {
+    margin-top: -25px;
+  }
+  .top-bottom-padding > td {
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+  .push-orders-show
+  {
+    text-align: center;
+    height: 45px;
+  }
+  .wrapper-show
+  {
+    min-height: 100%;
+    height: auto !important;
+    height: 100%;
+    margin: 0 auto -45px;
+  }
+
+
+
+}
+

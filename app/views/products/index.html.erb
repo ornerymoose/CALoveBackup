@@ -1,0 +1,15 @@
+<html>
+	<body id="products_index">
+		<div class="wrapper-index">
+			<div class="push-index"></div>
+			<div class="products-container">
+				<% @products.each_with_index do |product, index| %>
+					<%= link_to product, :class => "product-item-#{index}" do %>
+						<div class="text-element"><%= "#{product.name}" %> <%= number_to_currency(product.price) %></div>
+          <% end %>
+				<% end %>
+			</div>
+		</div>
+	</body>
+</html>
+

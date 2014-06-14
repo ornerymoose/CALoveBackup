@@ -1,0 +1,28 @@
+<html>
+  <body id="orders-show">
+    <div class="wrapper-show">
+      <div class="push-orders-show"></div>
+      <div class="orders-show-container">
+        <div id="order-title">Your Order</div>
+        <div class="line"><hr /></div>
+        <p>Dear <%= @customer_id.email %>,</p>
+        <p>Your order was a success!</p>
+        <p>Here's what you just bought from California Love:</p>
+        <table id="checkout-table">
+          <tr style="font-weight: bold;" class="cart-table-header">
+            <th class="headers">Item</th>
+            <th class="headers">Size</th>
+            <th class="headers">Price</th>
+            <th class="headers">Color</th>
+            <th class="headers">Quantity</th>
+          </tr>
+          <% @cart.line_items.each do |item| %>
+            <tr class="top-bottom-padding" style="border-bottom: 1px solid #eee;"><td style="padding-right:35px;"><%= item.product.name %></td><td style="padding-right:35px;"><%= item.size %></td><td style="padding-right:35px;">$<%= item.product.price %></td><td style="padding-right:35px;"><%= item.color %></td><td style="padding-right:35px;"> &times;<%= item.quantity %></td></tr>
+          <% end %>
+          <td style="padding: 20px 0px 20px 0px;" class="total_cell">Total: <%= render @cart %> </td>
+        </table>
+        <p>Please check your email inbox for order confirmation!</p>   
+      </div>
+    </div>
+  </body>
+</html>

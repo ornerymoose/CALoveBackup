@@ -1,0 +1,30 @@
+<html>
+  <body id="customer-cart">
+  	<div class="wrapper-customer-cart">
+      <div class="push-customer-cart"></div>
+      <div class="customer-cart-container">
+		  	<div id="cart-title">Shopping Cart</div>
+      	<div class="line"><hr /></div>
+				<table id="checkout-table">
+					<tr style="font-weight: bold;" class="cart-table-header">
+						<th class="headers">Item</th>
+						<th class="headers">Size</th>
+						<th class="headers">Price</th>
+						<th class="headers">Color</th>
+						<th class="headers">Quantity</th>
+					</tr>
+					<% @cart.line_items.each do |item| %>
+    				<tr class="top-bottom-padding" style="border-bottom: 1px solid #eee;"><td style="padding-right:35px;"><%= item.product.name %></td><td style="padding-right:35px;"><%= item.size %></td><td style="padding-right:35px;">$<%= item.product.price %></td><td style="padding-right:35px;"><%= item.color %></td><td style="padding-right:35px;"><%= item.quantity %></td><td><%= link_to 'Remove', item, method: :delete, remote: true, :class => 'delete-item' %> </td></tr>
+  				<% end %>
+				  <td style="padding: 20px 0px 20px 0px;" class="total_cell">Total: <%= render @cart %> </td>
+				</table>
+				<% if number_to_currency(@cart.total_price) == "$0.00" %>
+				<% else %>
+					<%= link_to 'Checkout', new_charge_path(id: @cart.id), {:class => "checkout"} %>
+					<br>
+					<%= link_to 'Continue Shopping', products_path, {:class => "continue-shopping"} %>
+				<% end %>
+	 		</div>
+    </div>
+  </body>
+</html>

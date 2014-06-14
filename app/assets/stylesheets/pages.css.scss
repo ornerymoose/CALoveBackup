@@ -1,0 +1,137 @@
+*, *:before, *:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+#pages-about {
+  .container {
+    margin: 0 auto;
+    max-width: 48rem;
+    width: 100%;
+  }
+}
+/* ABOUT PAGE BEGIN */
+#pages-about {
+  .wrapper-about
+  {
+    min-height: 100%;
+    height: auto !important;
+    height: 100%;
+    margin: 0 auto -45px;
+  }
+   .footer, .push-about
+  {
+    text-align: center;
+    height: 45px;
+  }
+  #about-header {
+    font-size: 42px;
+    margin: 0 auto;
+    width: 660px;
+  }
+  .line {
+    margin: 0 auto;
+    margin-top: -20px;
+    width: 660px;
+  }
+  .about-container {
+    margin: 0 auto;
+    width: 660px;
+    font-size: 14px;
+  }
+}
+/* ABOUT PAGE END */
+
+/* CONTACT PAGE BEGIN */
+
+#pages-contact {
+  html, body
+  {
+    background: none;
+  }
+  .wrapper-show
+  {
+    min-height: 100%;
+    height: auto !important;
+    height: 100%;
+    margin: 0 auto -45px;
+  }
+  #contact-header {
+    font-size: 42px;
+    margin: 0 auto;
+    width: 660px;
+  }
+  .contact-container {
+    margin: 0 auto;
+    width: 660px;
+    font-size: 14px;
+  }
+  .line {
+    margin: 0 auto;
+    margin-top: -20px;
+    width: 660px;
+  }
+  .footer, .push-show
+  {
+    text-align: center;
+    height: 45px;
+  }
+}
+/* CONTACT PAGE END */
+
+/* CUSTOMER SERVICE PAGE BEGIN */
+#pages-customer-service {
+  html, body
+  {
+    background: none;
+  }
+   .wrapper-show
+  {
+    min-height: 100%;
+    height: auto !important;
+    height: 100%;
+    margin: 0 auto -45px;
+  }
+  .footer, .push-show
+  {
+    text-align: center;
+    height: 45px;
+  }
+  #customer-service-header {
+    font-size: 42px;
+    margin: 0 auto;
+    width: 660px;
+  }
+  .line {
+    margin: 0 auto;
+    margin-top: -20px;
+    width: 660px;
+  }
+  .customer-service-container {
+    margin: 0 auto;
+    width: 660px;
+    font-size: 14px;
+  }
+}
+/* CUSTOMER SERVICE PAGE END */
+
+/* SERVICE PAGE BEGIN */
+#pages-subscribe {
+  html, body
+  {
+    background: none;
+  }
+    .wrapper-show
+  {
+    min-height: 100%;
+    height: auto !important;
+    height: 100%;
+    margin: 0 auto -45px;
+  }
+  .footer, .push-show
+  {
+    text-align: center;
+    height: 45px;
+  }
+}
+/* SERVICE PAGE END */

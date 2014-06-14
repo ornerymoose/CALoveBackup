@@ -1,0 +1,25 @@
+<%= form_for Message.new, :url => contact_us_path do |form| %>
+  <fieldset class="fields">
+    <div class="field">
+      <%= form.label :name %>
+      <%= form.text_field :name, :class => "form-control", :placeholder => "Enter Name", :maxlength => 40 %>
+    </div>
+    <div class="field" style="margin-top: 20px;">
+      <%= form.label :email %>
+      <%= form.text_field :email, :class => "form-control", :placeholder => "Enter Email Address", :maxlength => 40 %>
+    </div>
+    <div class="field" style="margin-top: 20px;">
+      <%= form.label :subject %>
+      <%= form.text_field :subject, :class => "form-control", :placeholder => "What are you contacting us in regards to?", :maxlength => 90 %>
+    </div>
+    <div class="field" style="margin-top: 20px;">
+      <%= form.label :body %>
+      <%= form.text_area :body,  :class => "form-control", :rows => 5, :placeholder => "Enter any additional information here...", :maxlength => 650 %>
+    </div>
+  </fieldset>
+  <fieldset class="actions">
+    <div class="field" style="margin-top: 20px;">
+    <%= form.submit "Send", :class => "btn btn-info" %>
+    <div class="flash-notice label label-danger"><%= flash[:error] %></div>
+  </fieldset>
+<% end %>
