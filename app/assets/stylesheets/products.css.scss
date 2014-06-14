@@ -249,6 +249,12 @@
 /****************************/
 
 /* TOP BANNER CONTENT - BEGIN */
+/*@media only screen and (max-width:500px){*/
+
+/* Smartphones (portrait) ----------- */
+@media only screen and (max-width : 320px) {
+  /* Styles */
+
 #transparent-box
 {
   margin-left: auto; 
@@ -488,5 +494,6 @@ html, body
   height: auto !important;
   height: 76%;
   margin: 0 auto -45px;
+} 
 }
 /* PAGE ESSENTIALS - END */
