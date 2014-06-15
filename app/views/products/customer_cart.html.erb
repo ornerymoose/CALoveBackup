@@ -20,7 +20,7 @@
 				</table>
 				<% if number_to_currency(@cart.total_price) == "$0.00" %>
 				<% else %>
-					<%= link_to 'Checkout', new_charge_path(id: @cart.id), {:class => "checkout"} %>
+					<%= link_to 'Checkout', new_charge_path(id: @cart.id), :class => 'checkout', :remote => true %>
 					<br>
 					<%= link_to 'Continue Shopping', products_path, {:class => "continue-shopping"} %>
 				<% end %>

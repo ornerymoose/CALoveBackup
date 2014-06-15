@@ -3,6 +3,10 @@ class ChargesController < ApplicationController
 
   def new
     @cart = Cart.find(params[:id])
+
+    respond_to do |format|
+      format.js {}
+    end
   end
 
   def create
