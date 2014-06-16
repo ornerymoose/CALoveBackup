@@ -4,7 +4,7 @@
       <div class="push-show"></div>
         <div class="item-image">
           <% if @product.id == 1 %>
-            <%= image_tag("https://s3.amazonaws.com/californialove/mens_black_front.jpg", :class=> "item-show-container") %>
+            <%= image_tag("https://s3.amazonaws.com/californialove/mens_black_front.jpg", :class=> "item-show-container-male-shirt") %>
             <%= form_for(@product, url: line_items_path(product_id: @product.id), html: {method: "update"}) do |f| %>
               <div class="item-information">
                 <table>
@@ -17,7 +17,7 @@
             <% end %>
           <% end %>
           <% if @product.id == 2 %>
-            <%= image_tag("https://s3.amazonaws.com/californialove/Girls_BlackFront.jpg", :class=> "item-show-container") %>
+            <%= image_tag("https://s3.amazonaws.com/californialove/Girls_BlackFront.jpg", :class=> "item-show-container-female-shirt") %>
             <%= form_for(@product, url: line_items_path(product_id: @product.id), html: {method: "update"}) do |f| %>
               <div class="item-information">
                 <table>
@@ -30,7 +30,7 @@
             <% end %>
           <% end %>
           <% if @product.id == 3 %>
-            <%= image_tag("https://s3.amazonaws.com/californialove/twill_hat.jpg", :class=> "item-show-container") %>
+            <%= image_tag("https://s3.amazonaws.com/californialove/twill_hat.jpg", :class=> "item-show-container-twill-hat") %>
             <%= form_for(@product, url: line_items_path(product_id: @product.id), html: {method: "update"}) do |f| %>
               <div class="item-information twill-item">
                 <table>
@@ -41,7 +41,7 @@
             <% end %>
           <% end %>
           <% if @product.id == 4 %>
-            <%= image_tag("https://s3.amazonaws.com/californialove/trucker_hat.jpg", :class=> "item-show-container") %>
+            <%= image_tag("https://s3.amazonaws.com/californialove/trucker_hat.jpg", :class=> "item-show-container-trucker-hat") %>
             <%= form_for(@product, url: line_items_path(product_id: @product.id), html: {method: "update"}) do |f| %>
               <div class="item-information trucker-item">
                 <table>
