@@ -8,14 +8,6 @@ Bundler.require(*Rails.groups)
 
 module Fulldeege
   class Application < Rails::Application
-
-    class Transformer
-      def compress(string)
-        do_something_returning_a_string(string)
-      end
-    end
-    config.assets.css_compressor = Transformer.new
-    config.assets.js_compressor = Transformer.new
     # Settings in config/environments/* take precedence over those specified here.
     # Application configuration should go into files in config/initializers
     # -- all .rb files in that directory are automatically loaded.
