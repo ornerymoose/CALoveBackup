@@ -5,7 +5,7 @@ Rails.application.configure do
          string
      end
   end
-  
+
   config.paperclip_defaults = {
     :storage => :s3,
     :s3_credentials => {
@@ -27,7 +27,6 @@ Rails.application.configure do
 
 
   #
-  config.assets.compress = true
   config.assets.js_compressor = NoCompression.new
   config.assets.css_compressor = NoCompression.new
   #
