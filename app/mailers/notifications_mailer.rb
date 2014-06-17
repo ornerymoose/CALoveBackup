@@ -1,6 +1,6 @@
 class NotificationsMailer < ActionMailer::Base
 
-  default :to => "calove.help@gmail.com"
+  default :to => "help@calove.ca"
 
   def new_message(message)
     @message = message
