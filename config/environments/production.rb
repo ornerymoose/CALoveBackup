@@ -1,4 +1,11 @@
 Rails.application.configure do
+   class NoCompression
+     def compress(string)
+         # do nothing
+         string
+     end
+  end
+  
   config.paperclip_defaults = {
     :storage => :s3,
     :s3_credentials => {
