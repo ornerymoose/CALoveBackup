@@ -18,6 +18,13 @@ Rails.application.configure do
   # Rake tasks automatically ignore this option for performance.
   config.eager_load = true
 
+
+  #
+  config.assets.compress = true
+  config.assets.js_compressor = NoCompression.new
+  config.assets.css_compressor = NoCompression.new
+  #
+
   # Full error reports are disabled and caching is turned on.
   config.consider_all_requests_local       = false
   config.action_controller.perform_caching = true
