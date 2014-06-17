@@ -171,6 +171,11 @@
     text-align: center;
     background-size: cover;
   }
+  .product-item-2, .product-item-3 {
+    height:500px;
+    width: 570px;
+
+  }
 }
 
 #products_index {
@@ -218,6 +223,9 @@
     height: 760px;
     width: 570px;
     line-height: 760px;
+  }
+  .product-item-2:hover .text-element, .product-item-3:hover .text-element {
+    line-height: 500px;
   }
 }
 
