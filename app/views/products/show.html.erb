@@ -3,60 +3,51 @@
   	<div class="wrapper-show">
       <div class="push-show"></div>
         <div class="item-image">
-          <% if @product.id == 1 %>
-            <%= image_tag("https://s3.amazonaws.com/californialove/mens_black_front.jpg", :class=> "item-show-container-male-shirt") %>
-            <%= form_for(@product, url: line_items_path(product_id: @product.id), html: {method: "update"}) do |f| %>
-              <div class="item-information">
+          <%= form_for(@product, url: line_items_path(product_id: @product.id), html: {method: "update"}) do |f| %>
+            <% if @product.id == 1 %>
+              <%= image_tag("https://s3.amazonaws.com/californialove/mens_black_front.jpg", :class=> "item-show-container-male-shirt") %>
+              <div class="male-shirt-item-dropdowns">
                 <table>
                   <tr><td style="padding-right:5px;">Size:</td><td style="background-color: #f8f8f8;"> <%= f.select(:size, @male_shirt_sizes.map { |value| value }) %></td><tr>
                   <tr><td style="padding-right:5px;">Color:</td><td style="background-color: #f8f8f8;"> <%= f.select(:color, @shirt_colors.map { |value| value }) %></td><tr>
                   <tr><td style="padding-right:5px;">Quantity:</td><td style="background-color: #f8f8f8;"> <%= f.select(:quantity, @quantity.map { |value| value }) %></td><tr>
                 </table>
-                <%= f.submit "Add to Cart", :class => "btn btn-mega btn-primary" %>
               </div>
             <% end %>
-          <% end %>
-          <% if @product.id == 2 %>
-            <%= image_tag("https://s3.amazonaws.com/californialove/Girls_BlackFront.jpg", :class=> "item-show-container-female-shirt") %>
-            <%= form_for(@product, url: line_items_path(product_id: @product.id), html: {method: "update"}) do |f| %>
-              <div class="item-information">
+            <% if @product.id == 2 %>
+              <%= image_tag("https://s3.amazonaws.com/californialove/Girls_BlackFront.jpg", :class=> "item-show-container-female-shirt") %>
+              <div class="female-shirt-item-dropdowns">
                 <table>
-                 <tr><td style="padding-right:5px;">Size:</td><td style="background-color: #f8f8f8;"> <%= f.select(:size, @female_shirt_sizes.map { |value| value }) %></td><tr>
-                 <tr><td style="padding-right:5px;">Color:</td><td style="background-color: #f8f8f8;"> <%= f.select(:color, @shirt_colors.map { |value| value }) %></td><tr>
-                 <tr><td style="padding-right:5px;">Quantity:</td><td style="background-color: #f8f8f8;"> <%= f.select(:quantity, @quantity.map { |value| value }) %></td><tr>
+                  <tr><td style="padding-right:5px;">Size:</td><td style="background-color: #f8f8f8;"> <%= f.select(:size, @female_shirt_sizes.map { |value| value }) %></td><tr>
+                  <tr><td style="padding-right:5px;">Color:</td><td style="background-color: #f8f8f8;"> <%= f.select(:color, @shirt_colors.map { |value| value }) %></td><tr>
+                  <tr><td style="padding-right:5px;">Quantity:</td><td style="background-color: #f8f8f8;"> <%= f.select(:quantity, @quantity.map { |value| value }) %></td><tr>
                 </table>
-                <%= f.submit "Add to Cart", :class => "btn btn-mega btn-primary" %>
               </div>
             <% end %>
-          <% end %>
-          <% if @product.id == 3 %>
-            <%= image_tag("https://s3.amazonaws.com/californialove/twill_hat.jpg", :class=> "item-show-container-twill-hat") %>
-            <%= form_for(@product, url: line_items_path(product_id: @product.id), html: {method: "update"}) do |f| %>
-              <div class="item-information twill-item">
+            <% if @product.id == 3 %>
+              <%= image_tag("https://s3.amazonaws.com/californialove/twill_hat.jpg", :class=> "item-show-container-twill-hat") %>
+              <div class="twill-hat-item-dropdowns">
                 <table>
                   <tr><td style="padding-right:5px;">Quantity:</td><td style="background-color: #f8f8f8;"> <%= f.select(:quantity, @quantity.map { |value| value }) %></td><tr>
                 </table>
-                <%= f.submit "Add to Cart", :class => "btn btn-primary btn-mega" %>
               </div>
-            <% end %>
-          <% end %>
-          <% if @product.id == 4 %>
-            <%= image_tag("https://s3.amazonaws.com/californialove/trucker_hat.jpg", :class=> "item-show-container-trucker-hat") %>
-            <%= form_for(@product, url: line_items_path(product_id: @product.id), html: {method: "update"}) do |f| %>
-              <div class="item-information trucker-item">
+            <% end %> 
+            <% if @product.id == 4 %>
+              <%= image_tag("https://s3.amazonaws.com/californialove/trucker_hat.jpg", :class=> "item-show-container-trucker-hat") %>
+              <div class="trucker-hat-item-dropdowns">
                 <table>
                   <tr><td style="padding-right:5px;">Quantity:</td><td style="background-color: #f8f8f8;"> <%= f.select(:quantity, @quantity.map { |value| value }) %></td><tr>
                   <tr><td style="padding-right:5px;">Color:</td><td style="background-color: #f8f8f8;"> <%= f.select(:color, @hat_colors.map { |value| value }) %></td><tr>
                 </table>
-                <%= f.submit "Add to Cart", :class => "btn btn-mega btn-primary" %>
               </div>
             <% end %>
+            <%= f.submit "Add to Cart", :class => "btn btn-mega btn-primary", :id => "add-to-cart-btn" %>
           <% end %>
         </div>
-          <div class="item-information">
-            <div class="item-title"><%= @product.name %></div>
-            <div class="item-price">$<%= @product.price %></div>
-          </div>
+      <div class="item-details">
+        <div class="item-title"><%= @product.name %></div>
+        <div class="item-price">$<%= @product.price %></div>
       </div>
+    </div>
   </body>
 </html>

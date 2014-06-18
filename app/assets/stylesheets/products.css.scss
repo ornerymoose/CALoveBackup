@@ -55,13 +55,11 @@
     margin-right: auto;
   }
   .item-show-container-male-shirt {
-   
     width: 356px;
     height: 475px;
     background-size: cover;
   }
   .item-show-container-female-shirt {
-  
     width: 384px;
     height: 500px;
     background-size: cover;
@@ -78,12 +76,37 @@
     width: 635px;
     background-size: cover;
   }
-  .item-information
+  .item-details
   {
-    margin-left: 840px;
-    margin-top: -406px;
+    position: absolute;
+    left: 650px;
+    top: 209px;
   }
-  
+  #add-to-cart-btn {
+    position: absolute;
+    left: 650px;
+    top: 500px;
+  }
+  .male-shirt-item-dropdowns {
+    position: absolute;
+    left: 650px;
+    top: 381px;
+  }
+  .female-shirt-item-dropdowns {
+    position: absolute;
+    left: 650px;
+    top: 381px;
+  }
+  .trucker-hat-item-dropdowns {
+    position: absolute;
+    left: 650px;
+    top: 400px;
+  }
+  .twill-hat-item-dropdowns {
+    position: absolute;
+    left: 650px;
+    top: 415px;
+  }
   .line {
     margin: -30px 0px 0px 5px;
     width: 276px;
@@ -95,13 +118,6 @@
   .item-price {
     font-size: 48px;
     font-weight: 100;
-  }
-  .twill-item {
-    margin-top: -338px;
-    
-  }
-  .trucker-item {
-    margin-top: -372px;
   }
   .btn-mega {
     padding: 18px 28px;
