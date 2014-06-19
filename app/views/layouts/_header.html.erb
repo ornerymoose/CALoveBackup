@@ -1,17 +1,19 @@
-<div id="transparent-box">
-  	<%= link_to(image_tag("https://s3.amazonaws.com/californialove/ca_love_logo.png", :class=>"logo-red"), "/") %>
-  	<%= form_tag '/products', :method => :get do %>
-      <%= text_field_tag :search, nil, data: {autocomplete_source: Product.all.map {|product| [product.size, product.color] }.flatten.sort }, placeholder: 'Search', maxlength: 25, class: "search-input-header" %>
-    <% end %>	
-    <%= link_to(image_tag("https://s3.amazonaws.com/californialove/cart.png", :class=>"cart-total-icon"), "/products/customer_cart") %>
-  	<div class="cart-total-partial"><%= render @cart %></div>
 
-  <nav>
-    <%= link_to 'ABOUT', about_path, :class => 'header-item' %>
-    <%= link_to 'SHOP', '/products', :class => 'header-item' %>
-    <%= link_to 'CONTACT', contact_path, :class => 'header-item' %>
-    <%= link_to 'CART', '/products/customer_cart', :class => 'header-item' %>
-  </nav>
-</div>
-
-
+      <div id="transparent-box">
+        	<%= link_to(image_tag("https://s3.amazonaws.com/californialove/ca_love_logo.png", :class=>"logo-red"), "/") %>
+        	<%= form_tag '/products', :method => :get do %>
+            <%= text_field_tag :search, nil, data: {autocomplete_source: Product.all.map {|product| [product.size, product.color] }.flatten.sort }, placeholder: 'Search', maxlength: 25, class: "search-input-header" %>
+          <% end %>	
+          <%= link_to(image_tag("https://s3.amazonaws.com/californialove/cart.png", :class=>"cart-total-icon"), "/products/customer_cart") %>
+        	<div class="cart-total-partial"><%= render @cart %></div>
+        <nav>
+        
+        
+              <%= link_to 'ABOUT', about_path, :class => 'header-item' %>
+              <%= link_to 'SHOP', '/products', :class => 'header-item' %>
+              <%= link_to 'CONTACT', contact_path, :class => 'header-item' %>
+              <%= link_to 'CART', '/products/customer_cart', :class => 'header-item' %>
+        
+        
+        </nav>
+      </div>
