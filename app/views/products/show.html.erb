@@ -36,7 +36,7 @@
               <%= image_tag("https://s3.amazonaws.com/californialove/trucker_hat.jpg", :class=> "item-show-container-trucker-hat") %>
               <div id="product_selects_trucker" class="trucker-hat-item-dropdowns">
                 <table>
-                  <tr><td style="padding-right:5px;">Quantity:</td><td style="background-color: #f8f8f8; width: 150px;"> <%= f.select(:quantity, @quantity.map { |value| value }, :include_blank => 'Select Quantity') %></td><tr>
+                  <tr><td style="padding-right:5px;">Quantity:</td><td style="background-color: #f8f8f8;"> <%= f.select(:quantity, @quantity.map { |value| value }, :include_blank => 'Select Quantity') %></td><tr>
                   <tr><td style="padding-right:5px;">Color:</td><td style="background-color: #f8f8f8;"> <%= f.select(:color, @hat_colors.map { |value| value }, :include_blank => 'Select Color') %></td><tr>
                 </table>
               </div>
