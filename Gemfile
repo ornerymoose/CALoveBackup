@@ -13,10 +13,8 @@ gem 'backstretch-rails'
 gem 'jquery-turbolinks'
 gem 'newrelic_rpm'
 
-gem 'bootstrap-sass'
-gem 'bootstrap_form'
-
 group :development do
+  gem 'quiet_assets'
   gem 'sqlite3'
 end
 
@@ -34,3 +32,14 @@ gem 'polyamorous',      github: 'activerecord-hackery/polyamorous'  # Require fo
 gem 'ransack',          github: 'activerecord-hackery/ransack'      # Require for ActiveAdmin to work with Rails 4.1
 gem 'formtastic',       github: 'justinfrench/formtastic'           # Require for ActiveAdmin to work with Rails 4.1
 gem 'devise'    
+
+# Use ActiveModel has_secure_password
+# gem 'bcrypt', '~> 3.1.7'
+
+# Use unicorn as the app server
+
+# Use Capistrano for deployment
+# gem 'capistrano-rails', group: :development
+
+# Use debugger
+#gem 'debugger', group: [:development, :test]

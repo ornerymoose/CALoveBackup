@@ -87,9 +87,6 @@ GEM
     backstretch-rails (2.0.4)
       railties (> 3.1)
     bcrypt (3.1.7)
-    bootstrap-sass (3.1.1.1)
-      sass (~> 3.2)
-    bootstrap_form (2.1.1)
     bourbon (3.2.3)
       sass (~> 3.2)
       thor
@@ -156,6 +153,8 @@ GEM
       mime-types
     pg (0.15.1)
     polyglot (0.3.5)
+    quiet_assets (1.0.3)
+      railties (>= 3.1, < 5.0)
     rack (1.5.2)
     rack-test (0.6.2)
       rack (>= 1.0)
@@ -233,8 +232,6 @@ DEPENDENCIES
   activeadmin!
   aws-sdk
   backstretch-rails
-  bootstrap-sass
-  bootstrap_form
   coffee-rails (~> 4.0.0)
   devise
   formtastic!
@@ -245,6 +242,7 @@ DEPENDENCIES
   paperclip
   pg (= 0.15.1)
   polyamorous!
+  quiet_assets
   rails (= 4.1.1)
   rails_12factor (= 0.0.2)
   ransack!
