@@ -1,4 +1,8 @@
 $(function(){
+  if ($('.top-bottom-padding').length == 0) {
+    $('.checkout, .cart-table-header, .total_cell').hide();
+  } 
+  
 	$('#products-welcome').backstretch("http://californialove.s3.amazonaws.com/rainbow2.jpg");
 	setTimeout(function(){
 		($('#products-welcome').backstretch([
@@ -14,9 +18,7 @@ $(function(){
 	$('.welcome-item-2, .product-item-2').backstretch("https://s3.amazonaws.com/californialove/twill_hat.jpg");
 	$('.welcome-item-3, .product-item-3').backstretch("https://s3.amazonaws.com/californialove/trucker_hat.jpg");
 
-
   $addToCart = $('#add-to-cart-btn');
-
 	$addToCart.prop('disabled', true);  
 
   $('#product_selects_twill').change(function() {
