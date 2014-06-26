@@ -1,4 +1,4 @@
-$(document).ready(function(){
+$(function(){
 	$('#products-welcome').backstretch("http://californialove.s3.amazonaws.com/rainbow2.jpg");
 	setTimeout(function(){
 		($('#products-welcome').backstretch([
@@ -14,68 +14,36 @@ $(document).ready(function(){
 	$('.welcome-item-2, .product-item-2').backstretch("https://s3.amazonaws.com/californialove/twill_hat.jpg");
 	$('.welcome-item-3, .product-item-3').backstretch("https://s3.amazonaws.com/californialove/trucker_hat.jpg");
 
-	$('#add-to-cart-btn').prop('disabled', true);  
 
-	$('#product_selects_twill').on('change', 'select', function() {
-    var $this = $(this),
-    	$quantity = $('#product_quantity'),
-      $addToCart = $('#add-to-cart-btn');
-    
-    if ($this.text() !== 'Select Quantity' ) {
-    	$this.data('selected', true);
+  $addToCart = $('#add-to-cart-btn');
+
+	$addToCart.prop('disabled', true);  
+
+  $('#product_selects_twill').change(function() {
+    if (!$('#product_quantity').val()) {
+      $addToCart.prop('disabled', true);
     } else {
-    	$this.data('selected', false);
-    }
+      $addToCart.prop('disabled', false);
+    } 
+  });
 
-    if ($quantity.data('selected') === true) {
-    	$addToCart.prop('disabled', false);
+  $('#product_selects_trucker').change(function() {
+    if (!$('#product_quantity').val() || !$('#product_color').val()) {
+      $addToCart.prop('disabled', true);
     } else {
-    	$addToCart.prop('disabled', true);   
+      $addToCart.prop('disabled', false);
     }
-        
-	});
+  });
 
-	$('#product_selects_trucker').on('change', 'select', function() {
-  	var $this = $(this),
-    	$quantity = $('#product_quantity'),
-      $color = $('#product_color'),
-      $addToCart = $('#add-to-cart-btn');
-  
-	  if ($this.text() !== 'Select Quantity' || $this.text() !== 'Select Color') {
-	  	$this.data('selected', true);
-	  } else {
-	  	$this.data('selected', false);
-	  }
-
-	  if ($quantity.data('selected') === true && $color.data('selected') === true) {
-	  	$addToCart.prop('disabled', false);
-	  } else {
-	  	$addToCart.prop('disabled', true);   
-	  }
-        
-	});
-
-	$('#product_selects').on('change', 'select', function() {
-    var $this = $(this),
-      $quantity = $('#product_quantity'),
-      $size = $('#product_size'),
-      $color = $('#product_color'),
-      $addToCart = $('#add-to-cart-btn');
-    
-    if ($this.text() !== 'Select Size' || $this.text() !== 'Select Quantity' || $this.text() !== 'Select Color') {
-    	$this.data('selected', true);
+  $('#product_selects').change(function() {
+    if (!$('#product_quantity').val() || !$('#product_color').val() || !$('#product_size').val()) {
+      $addToCart.prop('disabled', true);
     } else {
-    	$this.data('selected', false);
+      $addToCart.prop('disabled', false);
     }
-
-    if ($quantity.data('selected') === true && $size.data('selected') === true && $color.data('selected') === true) {
-    	$addToCart.prop('disabled', false);
-    } else {
-    	$addToCart.prop('disabled', true);   
-    }
-        
-	});
-
+  });
 
 });
+
+
 
