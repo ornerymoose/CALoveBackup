@@ -15,7 +15,7 @@
               </div>
             <% end %>
             <% if @product.id == 2 %>
-              <%= image_tag("https://s3.amazonaws.com/californialove/Girls_BlackFront.jpg", :class=> "item-show-container-female-shirt") %>
+              <%= image_tag("https://s3.amazonaws.com/californialove/womens_black_front.jpg", :class=> "item-show-container-female-shirt") %>
               <div id="product_selects" class="female-shirt-item-dropdowns">
                 <table>
                   <tr><td style="padding-right:5px;">Size:</td><td style="background-color: #f8f8f8;"> <%= f.select(:size, @female_shirt_sizes.map { |value| value }, :include_blank => 'Select Size') %></td><tr>
