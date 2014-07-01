@@ -65,6 +65,17 @@ GEM
       activesupport (= 4.1.1)
       builder (~> 3.1)
       erubis (~> 2.7.0)
+    active_utils (2.2.1)
+      activesupport (>= 2.3.11)
+      i18n
+    activemerchant (1.43.1)
+      active_utils (~> 2.0, >= 2.0.1)
+      activesupport (>= 2.3.14, < 5.0.0)
+      builder (>= 2.1.2, < 4.0.0)
+      i18n (~> 0.5)
+      json (~> 1.7)
+      money (< 7.0.0)
+      nokogiri (~> 1.4)
     activemodel (4.1.1)
       activesupport (= 4.1.1)
       builder (~> 3.1)
@@ -81,9 +92,6 @@ GEM
     arbre (1.0.1)
       activesupport (>= 3.0.0)
     arel (5.0.1.20140414130214)
-    aws-sdk (1.43.2)
-      json (~> 1.4)
-      nokogiri (>= 1.4.4)
     backstretch-rails (2.0.4)
       railties (> 3.1)
     bcrypt (3.1.7)
@@ -91,10 +99,6 @@ GEM
       sass (~> 3.2)
       thor
     builder (3.2.2)
-    climate_control (0.0.3)
-      activesupport (>= 3.0)
-    cocaine (0.5.4)
-      climate_control (>= 0.0.3, < 1.0)
     coffee-rails (4.0.1)
       coffee-script (>= 2.2.0)
       railties (>= 4.0.0, < 5.0)
@@ -112,6 +116,7 @@ GEM
     erubis (2.7.0)
     eventmachine (1.0.3)
     execjs (2.2.0)
+    google-analytics-rails (0.0.6)
     has_scope (0.6.0.rc)
       actionpack (>= 3.2, < 5)
       activesupport (>= 3.2, < 5)
@@ -141,16 +146,13 @@ GEM
     mime-types (1.25.1)
     mini_portile (0.6.0)
     minitest (5.3.4)
+    money (6.1.1)
+      i18n (~> 0.6.4)
     multi_json (1.10.1)
     newrelic_rpm (3.8.1.221)
     nokogiri (1.6.2.1)
       mini_portile (= 0.6.0)
     orm_adapter (0.5.0)
-    paperclip (4.1.1)
-      activemodel (>= 3.0.0)
-      activesupport (>= 3.0.0)
-      cocaine (~> 0.5.3)
-      mime-types
     pg (0.15.1)
     polyglot (0.3.5)
     quiet_assets (1.0.3)
@@ -230,16 +232,16 @@ PLATFORMS
 
 DEPENDENCIES
   activeadmin!
-  aws-sdk
+  activemerchant
   backstretch-rails
   coffee-rails (~> 4.0.0)
   devise
   formtastic!
+  google-analytics-rails
   jbuilder (~> 2.0)
   jquery-rails
   jquery-turbolinks
   newrelic_rpm
-  paperclip
   pg (= 0.15.1)
   polyamorous!
   quiet_assets

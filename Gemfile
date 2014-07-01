@@ -13,6 +13,10 @@ gem 'backstretch-rails'
 gem 'jquery-turbolinks'
 gem 'newrelic_rpm'
 
+gem 'activemerchant'
+#gem 'sprockets_better_errors'
+gem 'google-analytics-rails'
+
 group :development do
   gem 'quiet_assets'
   gem 'sqlite3'
@@ -24,8 +28,8 @@ group :production do
   gem 'thin'
 end
 
-gem 'paperclip'
-gem 'aws-sdk'
+#gem 'paperclip'
+#gem 'aws-sdk'
 gem 'stripe', :git => 'https://github.com/stripe/stripe-ruby'
 gem 'activeadmin', github: 'gregbell/active_admin'
 gem 'polyamorous',      github: 'activerecord-hackery/polyamorous'  # Require for ActiveAdmin to work with Rails 4.1
