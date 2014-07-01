@@ -28,22 +28,9 @@ group :production do
   gem 'thin'
 end
 
-#gem 'paperclip'
-#gem 'aws-sdk'
 gem 'stripe', :git => 'https://github.com/stripe/stripe-ruby'
 gem 'activeadmin', github: 'gregbell/active_admin'
 gem 'polyamorous',      github: 'activerecord-hackery/polyamorous'  # Require for ActiveAdmin to work with Rails 4.1
 gem 'ransack',          github: 'activerecord-hackery/ransack'      # Require for ActiveAdmin to work with Rails 4.1
 gem 'formtastic',       github: 'justinfrench/formtastic'           # Require for ActiveAdmin to work with Rails 4.1
 gem 'devise'    
-
-# Use ActiveModel has_secure_password
-# gem 'bcrypt', '~> 3.1.7'
-
-# Use unicorn as the app server
-
-# Use Capistrano for deployment
-# gem 'capistrano-rails', group: :development
-
-# Use debugger
-#gem 'debugger', group: [:development, :test]
