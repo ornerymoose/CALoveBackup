@@ -625,7 +625,7 @@ html, body
     .male-shirt-item-dropdowns {
       position: absolute;
       left: 165px;
-      top: 280px;
+      top: 275px;
     }
     .female-shirt-item-dropdowns {
       position: absolute;
@@ -651,7 +651,7 @@ html, body
       font-weight: 100;
     }
     .btn-mega {
-      padding: 18px 28px;
+      padding: 16px 24px;
       font-size: 18px;
       line-height: normal;
       -webkit-border-radius: 8px;
@@ -659,16 +659,8 @@ html, body
       border-radius: 8px;
     }
      #product_quantity, #product_size, #product_color  {
-      -moz-user-select: none;
-      width: 90px;
-      padding: 5px;
-      font-size: 16px;
-      line-height: 1;
-      border: 0;
-      border-radius: 0;
-      height: 34px;
-      -webkit-appearance: none;
-      -moz-appearance: window; 
+      width: 80px;
+      font-size: 10px;
      }
   }
   /* product show page end */
