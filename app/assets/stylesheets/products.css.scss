@@ -21,16 +21,6 @@
   {
     background: none;
   }
-}
-
-#products-show {
-  .show-item-1, .show-item-2, .show-item-3
-  {
-    display: none;
-  }
-}
-
-#products-show {
   .wrapper-show
   {
     min-height: 100%;
@@ -38,18 +28,15 @@
     height: 100%;
     margin: 0 auto -45px;
   }
-}
-
-#products-show {
   .footer, .push-show
   {
     text-align: center;
     height: 45px;
   }
-}
-
-
-#products-show {
+  .show-item-1, .show-item-2, .show-item-3
+  {
+    display: none;
+  }
   .item-image {
     margin-left: auto;
     margin-right: auto;
@@ -595,6 +582,96 @@ html, body
   }
 
   /* product index page end */
+
+  /* product show page begin */
+  #products-show {
+    .item-image {
+      margin-left: auto;
+      margin-right: auto;
+    }
+    .item-show-container-male-shirt {
+      width: 150px;
+      height: 200px;
+      background-size: cover;
+    }
+    .item-show-container-female-shirt {
+      width: 153px;
+      height: 200px;
+      background-size: cover;
+    }
+     .item-show-container-twill-hat
+    {
+      height: 75px;
+      width: 635px;
+      background-size: cover;
+    }
+    .item-show-container-trucker-hat
+    {
+      height: 200px;
+      width: 268px;
+      background-size: cover;
+    }
+    .item-details
+    {
+      position: absolute;
+      left: 165px;
+      top: 228px;
+    }
+    #add-to-cart-btn {
+      position: absolute;
+      left: 165px;
+      top: 380px;
+    }
+    .male-shirt-item-dropdowns {
+      position: absolute;
+      left: 165px;
+      top: 280px;
+    }
+    .female-shirt-item-dropdowns {
+      position: absolute;
+      left: 650px;
+      top: 381px;
+    }
+    .trucker-hat-item-dropdowns {
+      position: absolute;
+      left: 650px;
+      top: 400px;
+    }
+    .twill-hat-item-dropdowns {
+      position: absolute;
+      left: 650px;
+      top: 415px;
+    }
+    .item-title {
+      font-size: 18px;
+      font-weight: 300;
+    }
+    .item-price {
+      font-size: 18px;
+      font-weight: 100;
+    }
+    .btn-mega {
+      padding: 18px 28px;
+      font-size: 18px;
+      line-height: normal;
+      -webkit-border-radius: 8px;
+      -moz-border-radius: 8px;
+      border-radius: 8px;
+    }
+     #product_quantity, #product_size, #product_color  {
+      -moz-user-select: none;
+      width: 90px;
+      padding: 5px;
+      font-size: 16px;
+      line-height: 1;
+      border: 0;
+      border-radius: 0;
+      height: 34px;
+      -webkit-appearance: none;
+      -moz-appearance: window; 
+     }
+  }
+  /* product show page end */
 }
 /* samsung galaxy s4 below */
 @media screen and (max-device-width: 360px) and (device-height: 640px) and (-webkit-device-pixel-ratio: 3) and (device-aspect-ratio: 9/16) {
