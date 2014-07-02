@@ -536,9 +536,14 @@ html, body
 /*****/
 /* Smartphones (portrait and landscape) ----------- */
 @media only screen and (min-device-width : 320px) and (max-device-width : 480px) and (max-device-height : 480px){
-  .search-input-header
+  .cart-total-icon, .cart-total-partial, .search-input-header
   {
     display: none;
+  }
+  #transparent-box
+  {
+    width: 320px;
+    border-radius: 0px;
   }
   .header-item:link, .header-item:active, .header-item:visited
   {
@@ -549,17 +554,6 @@ html, body
   {
     width: 320px;
   }
-  /*#products-welcome
-  {
-    background-color: white !important;
-  }*/
-  /* .wrapper 
-  {
-    min-height: 480px;
-    height: auto !important;
-    height: 480px;
-    margin: 0 auto -45px;
-  }*/
   .about-shop
   {
     height: 50px;
@@ -605,5 +599,4 @@ html, body
   {
     font-size: 12px;
   }
-/* Styles */
 }
