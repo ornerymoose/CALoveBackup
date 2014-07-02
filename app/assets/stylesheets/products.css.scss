@@ -606,19 +606,16 @@ html, body
     .item-details
     {
       left: 165px;
-      top: 228px;
+      top: 230px;
     }
     #add-to-cart-btn {
       left: 165px;
-      top: 380px;
+      top: 383px;
     }
-    .male-shirt-item-dropdowns {
+    .male-shirt-item-dropdowns, .female-shirt-item-dropdowns {
       left: 165px;
-      top: 275px;
-    }
-    .female-shirt-item-dropdowns {
-      left: 165px;
-      top: 275px;
+      top: 280px;
+      font-size: 12px;
     }
     .trucker-hat-item-dropdowns {
       left: 650px;
@@ -629,7 +626,7 @@ html, body
       top: 415px;
     }
     .item-title, .item-price, .btn-mega {
-      font-size: 18px;
+      font-size: 17px;
     }
     .btn-mega {
       padding: 16px 24px;
