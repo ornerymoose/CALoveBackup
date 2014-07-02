@@ -600,3 +600,56 @@ html, body
     font-size: 12px;
   }
 }
+/* samsung galaxy s4 below */
+@media screen and (max-device-width: 360px) and (device-height: 640px) and (-webkit-device-pixel-ratio: 3) and (device-aspect-ratio: 9/16) {
+  .cart-total-icon, .cart-total-partial, .search-input-header
+  {
+    display: none;
+  }
+  #transparent-box
+  {
+    width: 360px;
+    border-radius: 0px;
+  }
+  .header-item:link, .header-item:active, .header-item:visited
+  {
+    margin: 0px 12px 0px 12px;
+    font-size: 18px;
+  }
+  nav
+  {
+    width: 360px;
+  }
+  .about-shop
+  {
+    height: 50px;
+    line-height: 50px;
+    font-size: 18px;
+  }
+  .product-container
+  {
+    width: 360px;
+  }
+  .welcome-element
+  {
+    font-size: 12px;
+  }
+  .welcome-item-0, .welcome-item-1
+  {
+    height: 300px;
+    width: 180px;
+    background-size: 180px 300px;
+  }
+  .welcome-item-1:hover .welcome-element, .welcome-item-0:hover .welcome-element
+  {
+    width: 180px;
+  }
+  .footer-items 
+  {
+    margin: 0px 8px 0px 8px;
+  }
+  .footer-items:link, .footer-items:active, .footer-items:visited
+  {
+    font-size: 12px;
+  }
+}
