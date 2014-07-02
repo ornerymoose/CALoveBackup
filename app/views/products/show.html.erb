@@ -8,7 +8,7 @@
               <%= image_tag("https://s3.amazonaws.com/californialove/mens_black_front.jpg", :class=> "item-show-container-male-shirt") %>
               <div id="product_selects" class="male-shirt-item-dropdowns">
                 <table>
-                  <tr><td style="padding-right:5px;">Size:</td><td aria-haspopup="true" style="background-color: #f8f8f8;"> <%= f.select(:size, @male_shirt_sizes.map { |value| value }, :include_blank => 'Select Size') %></td><tr>
+                  <tr><td style="padding-right:5px;">Size:</td><td style="background-color: #f8f8f8;"> <%= f.select(:size, @male_shirt_sizes.map { |value| value }, :include_blank => 'Select Size') %></td><tr>
                   <tr><td style="padding-right:5px;">Color:</td><td style="background-color: #f8f8f8;"> <%= f.select(:color, @shirt_colors.map { |value| value }, :include_blank => 'Select Color') %></td><tr>
                   <tr><td style="padding-right:5px;">Quantity:</td><td style="background-color: #f8f8f8;"> <%= f.select(:quantity, @quantity.map { |value| value }, :include_blank => 'Select Quantity') %></td><tr>
                 </table>
