@@ -151,32 +151,23 @@
   height: 100%;
   background-image: none;
   background-color: white;
-}
-
-.wrapper-index
-{
-  min-height: 100%;
-  height: auto !important;
-  height: 100%;
-  margin: 0 auto -45px;
-}
-
-#products_index {
+  .wrapper-index
+  {
+    min-height: 100%;
+    height: auto !important;
+    height: 100%;
+    margin: 0 auto -45px;
+  }
   .footer, .push-index
   {
     text-align: center;
     height: 45px;
   }
-}
-#products_index {
   .text-element
   {
     display: none;
     font-size: 30px;
   } 
-}
-
-#products_index {
   .product-item-0, .product-item-1, .product-item-2, .product-item-3
   {
     height: 760px;
@@ -188,35 +179,22 @@
   .product-item-2, .product-item-3 {
     height:500px;
     width: 570px;
-
   }
-}
-
-#products_index {
   .product-item-1
   {
     float: right;
     display: inline-block;
     background-position: center;
   }
-}
-
-#products_index {
   .product-item-2
   {
     margin-top: 20px;
   }
-}
-
-#products_index {
   .product-item-3
   {
     margin-top: 20px;
     float: right;
   }
-}
-
-#products_index {
   .products-container
   {
     margin-left: auto;
@@ -224,9 +202,6 @@
     width: 1200px;
     height: 1600px;
   }
-}
-
-#products_index {
   .product-item-0:hover .text-element, .product-item-1:hover .text-element, .product-item-2:hover .text-element, .product-item-3:hover .text-element
   {
     color: black;
@@ -388,7 +363,6 @@
   background-color: white;
   width: 100%;
   height: 300px;
-
 }
 
 .product-container
@@ -397,7 +371,6 @@
   margin-right: auto; 
   width: 800px;
   height: 300px;
-  /*background-color: yellow;*/
 }
 
 .welcome-element
@@ -536,6 +509,7 @@ html, body
 /*****/
 /* Smartphones (portrait and landscape) ----------- */
 @media only screen and (min-device-width : 320px) and (max-device-width : 480px) and (max-device-height : 480px){
+  /* welcome page begin */
   .cart-total-icon, .cart-total-partial, .search-input-header
   {
     display: none;
@@ -599,6 +573,28 @@ html, body
   {
     font-size: 12px;
   }
+  /* welcome page end */
+
+  /* product index page begin */
+
+  #products_index {
+    .product-item-0, .product-item-1, .product-item-2, .product-item-3
+    {
+      height: 150px;
+      width: 150px;
+    }
+    .products-container
+    {
+      width: 320px;
+      height: 0px;
+    }
+    .product-item-0:hover .text-element, .product-item-1:hover .text-element, .product-item-2:hover .text-element, .product-item-3:hover .text-element
+    {
+      display: none;
+    }
+  }
+
+  /* product index page end */
 }
 /* samsung galaxy s4 below */
 @media screen and (max-device-width: 360px) and (device-height: 640px) and (-webkit-device-pixel-ratio: 3) and (device-aspect-ratio: 9/16) {
