@@ -585,78 +585,54 @@ html, body
 
   /* product show page begin */
   #products-show {
-    .item-image {
-      margin-left: auto;
-      margin-right: auto;
-    }
     .item-show-container-male-shirt {
       width: 150px;
       height: 200px;
-      background-size: cover;
     }
     .item-show-container-female-shirt {
       width: 153px;
       height: 200px;
-      background-size: cover;
     }
-     .item-show-container-twill-hat
+    .item-show-container-twill-hat
     {
       height: 75px;
       width: 635px;
-      background-size: cover;
     }
     .item-show-container-trucker-hat
     {
       height: 200px;
       width: 268px;
-      background-size: cover;
     }
     .item-details
     {
-      position: absolute;
       left: 165px;
       top: 228px;
     }
     #add-to-cart-btn {
-      position: absolute;
       left: 165px;
       top: 380px;
     }
     .male-shirt-item-dropdowns {
-      position: absolute;
       left: 165px;
       top: 275px;
     }
     .female-shirt-item-dropdowns {
-      position: absolute;
-      left: 650px;
-      top: 381px;
+      left: 165px;
+      top: 275px;
     }
     .trucker-hat-item-dropdowns {
-      position: absolute;
       left: 650px;
       top: 400px;
     }
     .twill-hat-item-dropdowns {
-      position: absolute;
       left: 650px;
       top: 415px;
     }
-    .item-title {
+    .item-title, .item-price, .btn-mega {
       font-size: 18px;
-      font-weight: 300;
-    }
-    .item-price {
-      font-size: 18px;
-      font-weight: 100;
     }
     .btn-mega {
       padding: 16px 24px;
-      font-size: 18px;
-      line-height: normal;
-      -webkit-border-radius: 8px;
-      -moz-border-radius: 8px;
-      border-radius: 8px;
     }
      #product_quantity, #product_size, #product_color  {
       width: 80px;
