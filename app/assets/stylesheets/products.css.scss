@@ -595,13 +595,13 @@ html, body
     }
     .item-show-container-twill-hat
     {
-      height: 75px;
-      width: 635px;
+      height: 112px;
+      width: 150px;
     }
     .item-show-container-trucker-hat
     {
-      height: 200px;
-      width: 268px;
+      height: 112px;
+      width: 150px;
     }
     .item-details
     {
@@ -612,18 +612,16 @@ html, body
       left: 165px;
       top: 383px;
     }
-    .male-shirt-item-dropdowns, .female-shirt-item-dropdowns {
+    .twill-mobile {
+     /* top: 320px !important;*/
+    }
+    .trucker-mobile {
+     /* top: 352px !important;*/
+    }
+    .male-shirt-item-dropdowns, .female-shirt-item-dropdowns, .trucker-hat-item-dropdowns, .twill-hat-item-dropdowns {
       left: 165px;
       top: 280px;
       font-size: 12px;
-    }
-    .trucker-hat-item-dropdowns {
-      left: 650px;
-      top: 400px;
-    }
-    .twill-hat-item-dropdowns {
-      left: 650px;
-      top: 415px;
     }
     .item-title, .item-price, .btn-mega {
       font-size: 17px;
