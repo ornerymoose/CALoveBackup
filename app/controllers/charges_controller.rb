@@ -43,7 +43,7 @@ end
     @charge = Stripe::Charge.create(
       :customer    => stripe_customer.id,
       :amount      => @cart.total_price * 100,
-      :description => 'California Love Customer',
+      :description => 'CALove Customer',
       :currency    => 'usd'
     )  
 

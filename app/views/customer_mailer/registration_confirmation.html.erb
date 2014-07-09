@@ -7,9 +7,9 @@
 <p>
 Dear <%= @customer %>,
 </p>
-You have successfully bought some awesome California Love gear!
+You have successfully bought some awesome CALove gear!
 <p>
-<p> Here's what you bought from California Love:</p>
+<p> Here's what you bought from CALove:</p>
 <ul>
 	<% @current_cart.line_items.each do |item| %>
 		<li><%= item.quantity %> &times; <%= item.size %> <%= item.color %> <%= item.product.name %><br>

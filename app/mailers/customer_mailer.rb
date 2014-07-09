@@ -5,7 +5,7 @@ class CustomerMailer < ActionMailer::Base
   	@cart = order
   	@charge = info
   	@customer = email
-    mail(to: email, subject: "Thank you for shopping with California Love")
+    mail(to: email, subject: "Thank you for shopping with CALove")
   end
 end
 
