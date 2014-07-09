@@ -9,6 +9,21 @@ class ChargesController < ApplicationController
     end
   end
 
+    def express_checkout
+    @cart = current_cart
+    response = EXPRESS_GATEWAY.setup_purchase(@cart.total_price,
+      ip: request.remote_ip,
+      return_url: 'http://www.calove.ca',
+      cancel_return_url: 'http://www.google.com',
+      currency: "USD",
+      allow_guest_checkout: true,
+      items: [{name: "Order", description: "Order description", quantity: "1", amount: @cart.total_price}]
+    )
+    puts response.token
+    puts response
+  redirect_to EXPRESS_GATEWAY.redirect_url_for(response.token)
+end
+
   def create
 
   begin
@@ -25,7 +40,7 @@ class ChargesController < ApplicationController
     @customer.stripe_customer_id = stripe_customer.id
     @customer.save!
 
-    charge = Stripe::Charge.create(
+    @charge = Stripe::Charge.create(
       :customer    => stripe_customer.id,
       :amount      => @cart.total_price * 100,
       :description => 'California Love Customer',
@@ -38,7 +53,7 @@ class ChargesController < ApplicationController
     end
 
     respond_to do |format|
-      CustomerMailer.received(@cart, @customer.email).deliver
+      CustomerMailer.received(@cart, @charge, @customer.email).deliver
       format.html { redirect_to charge_path(@cart, {customer_id: @customer.id}) }
       format.json { head :ok }
     end
