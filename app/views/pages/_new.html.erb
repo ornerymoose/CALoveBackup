@@ -17,7 +17,7 @@
       <%= form.text_area :body,  :class => "form-control", :rows => 5, :placeholder => "Enter any additional information here...", :maxlength => 650 %>
     </div>
   </fieldset>
-  <fieldset class="actions">
+  <fieldset class="actions action-spacing">
     <div class="field" style="margin-top: 20px;">
     <%= form.submit "Send", :class => "btn btn-info" %>
     <div class="flash-notice label label-danger"><%= flash[:error] %></div>
