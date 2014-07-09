@@ -7,5 +7,11 @@ class CustomerMailer < ActionMailer::Base
   	@customer = email
     mail(to: email, subject: "Thank you for shopping with CALove")
   end
+
+  def sent(order, info, email)
+  	@cart = order
+  	@charge = info
+    mail(to: email, subject: "Someone just bought CALove gear!")
+  end
 end
 
