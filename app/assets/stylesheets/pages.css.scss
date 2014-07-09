@@ -93,8 +93,16 @@
       margin-bottom: 45px;
     }
   }
+  /* contact page end - MOBILE */
+  /* customer service page begin - MOBILE */
+  #pages-customer-service {
+    .customer-service-container, #customer-service-header, .line, .wrapper-show {
+      width: 300px !important;
+    }
+  }
+  /* customer service page end - MOBILE */
 }
-/* contact page end - MOBILE */
+
 /* CUSTOMER SERVICE PAGE BEGIN */
 #pages-customer-service {
   html, body
