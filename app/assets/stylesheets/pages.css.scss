@@ -83,7 +83,7 @@
 /* contact page begin - MOBILE iphone4 */
 @media only screen and (min-device-width : 320px) and (max-device-width : 480px) and (max-device-height : 480px){
   #pages-contact {
-    .contact-container {
+    .contact-container, #contact-header {
       width: 320px;
     }
     .line, .form-control {
