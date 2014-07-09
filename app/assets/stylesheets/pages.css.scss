@@ -79,6 +79,23 @@
 }
 /* CONTACT PAGE END */
 
+
+/* contact page begin - MOBILE */
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) and (max-device-height : 480px){
+  #pages-contact {
+    .line {
+      width: 310px;
+    }
+    .form-control
+    {
+      width: 318px;
+    }
+    .action-spacing {
+      margin-bottom: 45px;
+    }
+  }
+}
+/* contact page end - MOBILE */
 /* CUSTOMER SERVICE PAGE BEGIN */
 #pages-customer-service {
   html, body
