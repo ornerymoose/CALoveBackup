@@ -1,4 +1,4 @@
-== README: Live Version of California Love
+== README: Live Version of CALove
 
 Online store for selling t-shirts and hats.
 
