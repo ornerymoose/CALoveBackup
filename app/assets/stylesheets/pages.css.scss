@@ -101,6 +101,14 @@
     }
   }
   /* customer service page end - MOBILE */
+  /* about page begin - MOBILE */
+  #pages-about {
+    #about-header, .line, .about-container {
+      width: 280px;
+      margin: -20px 20px 40px 20px;
+    }
+  }
+  /* about page end - MOBILE */
 }
 
 /* CUSTOMER SERVICE PAGE BEGIN */
@@ -140,7 +148,7 @@
 }
 /* CUSTOMER SERVICE PAGE END */
 
-/* SERVICE PAGE BEGIN */
+/* SUBSCRIBE PAGE BEGIN */
 #pages-subscribe {
   html, body
   {
@@ -159,4 +167,4 @@
     height: 45px;
   }
 }
-/* SERVICE PAGE END */
+/* SUBSCRIBE PAGE END */
