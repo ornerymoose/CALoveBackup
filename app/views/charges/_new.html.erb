@@ -3,13 +3,29 @@
       <div class="push-charges-new"></div>
       <div class="wrapper-charges-new">
         <div class="charges-container">
-          <%= form_tag charges_path(id: @cart.id), :html => {:id => 'TESTID'} do %>
-              <script src="https://checkout.stripe.com/checkout.js" class="stripe-button" id="TESTID"
-                data-key="<%= Rails.configuration.stripe[:publishable_key] %>"
-                data-description="One-Time Charge"
-                data-amount="<%= @cart.total_price * 100 %>"
-                data-shipping-address="true" data-billing-address="true">
-              </script>
+          <%= form_tag charges_path(id: @cart.id), id: 'chargeForm' do %>
+            <script src="https://checkout.stripe.com/checkout.js"></script>
+            <a href="#" id="customPurchase">Pay with Credit Card</a>
+            <script>
+              var handler = StripeCheckout.configure({
+                key: '<%= ENV["PUBLISHABLE_TEST"] %>',
+                image: 'https://s3.amazonaws.com/californialove/ca_love_logo.png',
+                token: function(token) {
+                  var tokenInput = $("<input type=hidden name=stripeToken />").val(token.id);
+                  var emailInput = $("<input type=hidden name=stripeEmail />").val(token.email);
+                  $("#chargeForm").append(tokenInput).append(emailInput).submit();
+                }
+              });
+              document.getElementById('customPurchase').addEventListener('click', function(e) {
+                handler.open({
+                  name: 'California Love',
+                  description: 'One-time Charge',
+                  amount: "<%= @cart.total_price * 100 %>",
+                  shippingAddress: true
+                });
+                e.preventDefault();
+              });
+            </script>
           <% end %>
         </div>
       </div>

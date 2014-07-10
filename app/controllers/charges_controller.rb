@@ -9,21 +9,6 @@ class ChargesController < ApplicationController
     end
   end
 
-    def express_checkout
-    @cart = current_cart
-    response = EXPRESS_GATEWAY.setup_purchase(@cart.total_price,
-      ip: request.remote_ip,
-      return_url: 'http://www.calove.ca',
-      cancel_return_url: 'http://www.google.com',
-      currency: "USD",
-      allow_guest_checkout: true,
-      items: [{name: "Order", description: "Order description", quantity: "1", amount: @cart.total_price}]
-    )
-    puts response.token
-    puts response
-  redirect_to EXPRESS_GATEWAY.redirect_url_for(response.token)
-end
-
   def create
 
   begin
