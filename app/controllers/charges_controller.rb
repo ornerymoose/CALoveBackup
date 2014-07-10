@@ -54,7 +54,7 @@ end
 
     respond_to do |format|
       CustomerMailer.received(@cart, @charge, @customer.email).deliver
-      CustomerMailer.sent(@cart, @charge, "dpardy87@gmail.com").deliver
+      CustomerMailer.sent(@cart, @charge, "calove.help@gmail.com").deliver
       format.html { redirect_to charge_path(@cart, {customer_id: @customer.id}) }
       format.json { head :ok }
     end
