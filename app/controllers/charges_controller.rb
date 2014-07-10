@@ -29,7 +29,8 @@ class ChargesController < ApplicationController
       :customer    => stripe_customer.id,
       :amount      => @cart.total_price * 100,
       :description => 'CALove Customer',
-      :currency    => 'usd'
+      :currency    => 'usd',
+      :metadata    => {:shipping_address => params[:stripeShippingAddress]}
     )  
 
     rescue Stripe::CardError => e

@@ -10,10 +10,14 @@
               var handler = StripeCheckout.configure({
                 key: '<%= ENV["PUBLISHABLE_TEST"] %>',
                 image: 'https://s3.amazonaws.com/californialove/ca_love_logo.png',
-                token: function(token) {
+                token: function(token, args) {
+                  console.log(args);
+                  var a = args.shipping_name, b = args.shipping_address_line1, c = args.shipping_address_city, d = args.shipping_address_state, e = args.shipping_address_zip, f = args.shipping_address_country, both = a + ", " + b + ", " + c + ", " + d + ", " + e + ", " + f;
+                  console.log(both);
                   var tokenInput = $("<input type=hidden name=stripeToken />").val(token.id);
                   var emailInput = $("<input type=hidden name=stripeEmail />").val(token.email);
-                  $("#chargeForm").append(tokenInput).append(emailInput).submit();
+                  var shippingInput = $("<input type=hidden name=stripeShippingAddress />").val(both);
+                  $("#chargeForm").append(tokenInput).append(emailInput).append(shippingInput).submit();
                 }
               });
               document.getElementById('customPurchase').addEventListener('click', function(e) {
