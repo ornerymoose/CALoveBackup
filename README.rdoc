@@ -8,7 +8,5 @@ Built using
 
 * Active Admin
 
-* Amazon SDK 
-
 * Jquery Backstretch Plugin
 
