@@ -25,12 +25,17 @@
     height: 100%;
     margin: 0 auto -45px;
    }
+   .test-button {
+      height: 50px;
+      width: 50px;
+      background-color: blue;
+   }
 }
 /****************************/
 /* charges new page end */
 /****************************/
 
-/*  replace w charges name, currently orders ******>>>>>*/
+/* replace w charges name, currently orders */
 
 #orders-show 
 	{
@@ -62,8 +67,25 @@
     height: 100%;
     margin: 0 auto -45px;
   }
-
-
-
 }
+
+/* mobile begin */
+
+/* charges (orders) show/confirm page begin */
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) and (max-device-height : 480px){
+  #orders-show {
+    .orders-show-container {
+      width: 280px;
+      margin-left: 20px;
+      margin-right: 20px;
+    }
+    #order-title {
+      font-size: 48px;
+      font-weight: 300;
+    }
+  }
+}
+/* charges (orders) show/confirm page end */
+
+/* mobile end */
 
