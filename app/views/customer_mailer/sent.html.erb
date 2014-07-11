@@ -7,11 +7,10 @@
 </ul>  
 <p>Total Amount Spent: $<%= @cart.total_price %></p>
 <ul>Details:
-<li>CardHolder Name: <%= @charge.card.name %></li>
-<li>Email Address: <%= @charge.receipt_email %></li>
-<li>Credit Card: <%= @charge.card.brand %></li>
-<li>Last 4 digits of CC: <%= @charge.card.last4 %></li>
-<li>Expiration Date: <%= @charge.card.exp_month %>/<%= @charge.card.exp_year %></li>
-<li>ALL INFO TEST: <%= @charge %></li>
-<li>Shipping Information: <%= @charge.metadata %></li>
+	<li>Shipping Information: <%= @charge.metadata.shipping_address %></li>
+	<li>Billing Information: <%= @charge.card.name %>, <%= @charge.card.address_line1 %>, <%= @charge.card.address_city %>, <%= @charge.card.address_state %>, <%= @charge.card.address_zip %>, <%= @charge.card.address_country %>
+	<li>Email Address: <%= @charge.receipt_email %></li>
+	<li>Credit Card: <%= @charge.card.brand %></li>
+	<li>Last 4 digits of CC: <%= @charge.card.last4 %></li>
+	<li>Expiration Date: <%= @charge.card.exp_month %>/<%= @charge.card.exp_year %></li>
 </ul>
