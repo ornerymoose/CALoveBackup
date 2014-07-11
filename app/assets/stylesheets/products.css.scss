@@ -129,9 +129,6 @@
 }
 
 /* products show page end */
-/****************************/
-/****************************/
-/****************************/
 /* products index page begin */
 
 #products_index {
@@ -220,9 +217,6 @@
     background-color: white;
     height: 100%;
   }
-}
-
-#customer-cart {
   .wrapper-customer-cart 
   {
     min-height: 100%;
@@ -635,6 +629,21 @@ html, body
      }
   }
   /* product show page end */
+  /* customer cart page begin */
+  #customer-cart {
+    .customer-cart-container {
+      width: 310px;
+      margin-left: 10px;
+    }
+    #cart-title {
+      font-size: 48px;
+    }
+    .top-bottom-padding > td {
+      padding-top: 20px;
+      padding-bottom: 20px;
+    }
+  }
+  /* customer cart page end */
 }
 /* samsung galaxy s4 below */
 @media screen and (max-device-width: 360px) and (device-height: 640px) and (-webkit-device-pixel-ratio: 3) and (device-aspect-ratio: 9/16) {
