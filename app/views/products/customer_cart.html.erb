@@ -5,6 +5,7 @@
       <div class="customer-cart-container">
 		  	<div id="cart-title">Shopping Cart</div>
       	<div class="line"><hr /></div>
+      	<div class="empty-cart"></div>
 				<table id="checkout-table">
 					<tr style="font-weight: bold;" class="cart-table-header">
 						<th class="headers">Item</th>
@@ -20,7 +21,7 @@
 				</table>
 				<% if number_to_currency(@cart.total_price) == "$0.00" %>
 				<% else %>
-					<%= render "charges/new" %>
+						<%= render "charges/new" %>
 					<br>
 					<%= link_to 'Continue Shopping', products_path, {:class => "continue-shopping"} %>
 				<% end %>

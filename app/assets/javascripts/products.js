@@ -1,6 +1,7 @@
 $(function(){
   if ($('.top-bottom-padding').length == 0) {
-    $('.checkout, .cart-table-header, .total_cell').hide();
+    $('.checkout, #cart-title, .cart-table-header, .total_cell').hide();
+    $('.empty-cart').html("Your cart is currently empty.");
   } 
 
 	$('.welcome-item-1, .product-item-1').backstretch("https://s3.amazonaws.com/californialove/womens_black_front.jpg");
