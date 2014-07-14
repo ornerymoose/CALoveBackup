@@ -1,6 +1,6 @@
 $(function(){
   if ($('.top-bottom-padding').length == 0) {
-    $('.checkout, #cart-title, .cart-table-header, .total_cell').hide();
+    $('.checkout, .cart-table-header, .total_cell').hide();
     $('.empty-cart').html("Your cart is currently empty.");
   } 
 
