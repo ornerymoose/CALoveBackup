@@ -1,16 +1,16 @@
 <%= form_for Message.new, :url => contact_us_path do |form| %>
   <fieldset class="fields">
     <div class="field">
-      <%= form.text_field :name, :class => "form-control", :placeholder => "Enter Name", :maxlength => 40 %>
+      <%= form.text_field :name, :class => "form-control", :placeholder => "Name", :maxlength => 40 %>
     </div>
     <div class="field" style="margin-top: 20px;">
-      <%= form.text_field :email, :class => "form-control", :placeholder => "Enter Email Address", :maxlength => 40 %>
+      <%= form.text_field :email, :class => "form-control", :placeholder => "Email", :maxlength => 40 %>
     </div>
     <div class="field" style="margin-top: 20px;">
-      <%= form.text_field :subject, :class => "form-control", :placeholder => "What are you contacting us in regards to?", :maxlength => 90 %>
+      <%= form.text_field :subject, :class => "form-control", :placeholder => "Subject", :maxlength => 90 %>
     </div>
     <div class="field" style="margin-top: 20px;">
-      <%= form.text_area :body,  :class => "form-control", :rows => 5, :placeholder => "Enter any additional information here...", :maxlength => 650 %>
+      <%= form.text_area :body,  :class => "form-control", :rows => 5, :placeholder => "Content", :maxlength => 650 %>
     </div>
   </fieldset>
   <fieldset class="actions action-spacing">
