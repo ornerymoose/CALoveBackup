@@ -1,5 +1,5 @@
 class CustomerMailer < ActionMailer::Base
-  default from: ENV['ACTION_MAILER_NAME']
+  default from: ENV['ACTION_MAILER_TY']
 
   def received(order, info, email)
   	@cart = order

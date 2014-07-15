@@ -1,10 +1,8 @@
 class NotificationsMailer < ActionMailer::Base
 
-  default :to => "help@calove.ca"
-
   def new_message(message)
     @message = message
-    mail(from: message.email, subject: "CA Love Contact Form: #{message.subject}")
+    mail(from: "#{@message.email}", to: ENV['ACTION_MAILER_TY'], subject: "CA Love Contact Form: #{message.subject}")
   end
 
 end

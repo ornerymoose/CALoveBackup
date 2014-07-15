@@ -1,9 +1,17 @@
 Rails.application.configure do
-  # Settings specified here will take precedence over those in config/application.rb.
+ 
+  config.assets.raise_production_errors = true
 
-  # In the development environment your application's code is reloaded on
-  # every request. This slows down response time but is perfect for development
-  # since you don't have to restart the web server when you make code changes.
+  config.after_initialize do
+    ActiveMerchant::Billing::Base.mode = :test
+    paypal_options = {
+      login: "calove.help_api1.gmail.com",
+      password: "HS4WRTKARYJ5JHPW",
+      signature: "A335bbO7ylnKbz.fPySc2l3ehBl5A-JtkYbdeRwMp8O8bpnFfYFgo708"
+    }
+    ::EXPRESS_GATEWAY = ActiveMerchant::Billing::PaypalExpressGateway.new(paypal_options)
+  end
+
   config.cache_classes = false
 
   # Do not eager load code on boot.
