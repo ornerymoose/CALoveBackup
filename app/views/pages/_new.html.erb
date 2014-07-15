@@ -1,4 +1,4 @@
-<%= form_for Message.new, :url => contact_us_path do |form| %>
+<%= form_for @message, :url => contact_us_path do |form| %>
   <fieldset class="fields">
     <div class="field">
       <%= form.text_field :name, :class => "form-control", :placeholder => "Name", :maxlength => 40 %>
