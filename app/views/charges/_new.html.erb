@@ -5,7 +5,7 @@
         <div class="charges-container">
           <%= form_tag charges_path(id: @cart.id), id: 'chargeForm' do %>
             <script src="https://checkout.stripe.com/checkout.js"></script>
-            <a href="#" id="customPurchase">Checkout</a>
+            <a href="#" id="customPurchase"><button type="button" class="btn btn-primary btn-sm">Checkout</button></a>
             <script>
               var handler = StripeCheckout.configure({
                 key: '<%= ENV["PUBLISHABLE_TEST"] %>',
