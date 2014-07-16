@@ -17,6 +17,22 @@
 /* products show page begin */
 
 #products-show {
+  html, body
+  {
+    background: none;
+  }
+  .wrapper-show
+  {
+    min-height: 100%;
+    height: auto !important;
+    height: 100%;
+    margin: 0 auto -45px;
+  }
+  .footer, .push-show
+  {
+    text-align: center;
+    height: 45px;
+  }
   .male-full-container, .female-full-container, .twill-full-container, .trucker-full-container {
       margin-left: auto;
       margin-right: auto;
@@ -33,6 +49,15 @@
   }
   .male-info {
     width: 245px;
+  }
+  .item-price {
+    font-size: 36px;
+    font-weight: 100;
+    padding-top: 4px;
+    /*margin-left: 60px;*/
+  }
+  .ipmale {
+    margin-bottom: 100px;
   }
   .item-show-container-male-shirt {
     width: 356px;
@@ -72,47 +97,6 @@
     float: left;
     margin-right: 20px;
     background-size: cover;
-  }
-  html, body
-  {
-    background: none;
-  }
-  .wrapper-show
-  {
-    min-height: 100%;
-    height: auto !important;
-    height: 100%;
-    margin: 0 auto -45px;
-  }
-  .footer, .push-show
-  {
-    text-align: center;
-    height: 45px;
-  }
-  .show-item-1, .show-item-2, .show-item-3
-  {
-    display: none;
-  }
-  .item-image {
-    margin-left: auto;
-    margin-right: auto;
-  }
-  
-  .item-details
-  {
-    width: 100%;
-  }
-  #add-to-cart-btn-male {
-    margin-top: 267px;
-  }
-  #add-to-cart-btn-female {
-    margin-top: 292px;
-  }
-  #add-to-cart-btn-twill {
-    margin-top: 274px;
-  }
-  #add-to-cart-btn-trucker {
-    margin-top: 271px;
   }
   .line {
     margin: -30px 0px 0px 5px;
@@ -154,11 +138,47 @@
       width: 840px;
     }
   }
+  .show-item-1, .show-item-2, .show-item-3
+  {
+    display: none;
+  }
+  .item-image {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .item-details
+  {
+    width: 100%;
+  }
   .item-price {
     font-size: 36px;
     font-weight: 100;
     padding-top: 4px;
     /*margin-left: 60px;*/
+  }
+  .ipm {
+    margin-bottom: 100px;
+  }
+  .ipf {
+    margin-bottom: 130px;
+  }
+  .iptwill {
+    margin-bottom: 160px; 
+  }
+  .iptrucker {
+    margin-bottom: 140px;
+  }
+  #add-to-cart-btn-male {
+    margin-top: 167px;
+  }
+  #add-to-cart-btn-female {
+    margin-top: 162px;
+  }
+  #add-to-cart-btn-twill {
+    margin-top: 114px;
+  }
+  #add-to-cart-btn-trucker {
+    margin-top: 131px;
   }
   .btn-mega {
     padding: 18px 28px;
