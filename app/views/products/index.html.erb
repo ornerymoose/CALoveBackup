@@ -3,6 +3,9 @@
 		<div class="wrapper-index">
 			<div class="push-index"></div>
 			<div class="products-container">
+				<div class="shop-header">Shop
+        	<div class="line"><hr /></div>
+      	</div>
 				<% @products.each_with_index do |product, index| %>
 					<%= link_to product, :class => "product-item-#{index}" do %>
 						<div class="text-element"><%= "#{product.name}" %> <%= number_to_currency(product.price) %></div>
