@@ -1,6 +1,6 @@
 $(function(){
   if ($('.top-bottom-padding').length == 0) {
-    $('.checkout, .cart-table-header, .total_cell').hide();
+    $('.checkout, .cart-table-header, .total_cell, .td-total').hide();
     $('.empty-cart').html("Your cart is currently empty.");
   } 
 
@@ -9,7 +9,7 @@ $(function(){
 	$('.welcome-item-2, .product-item-2').backstretch("https://s3.amazonaws.com/californialove/twill_hat.jpg");
 	$('.welcome-item-3, .product-item-3').backstretch("https://s3.amazonaws.com/californialove/trucker_hat.jpg");
 
-  $addToCart = $('#add-to-cart-btn');
+  $addToCart = $('#add-to-cart-btn-male, #add-to-cart-btn-female, #add-to-cart-btn-trucker, #add-to-cart-btn-twill');
 	$addToCart.prop('disabled', true);  
 
   $('#product_selects_twill').change(function() {

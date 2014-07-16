@@ -22,7 +22,7 @@
                       <tr><td style="padding-right:5px;">Quantity:</td><td style="background-color: #f8f8f8;"> <%= f.select(:quantity, @quantity.map { |value| value }, :include_blank => 'Select Quantity') %></td><tr>
                     </table>
                   </div>
-                  <%= f.submit "Add to Cart", :class => "btn btn-mega btn-primary", :id => "add-to-cart-btn" %>
+                  <%= f.submit "Add to Cart", :class => "btn btn-mega btn-primary", :id => "add-to-cart-btn-male" %>
                 </div>
               </div>
             <% end %>
@@ -44,7 +44,7 @@
                       <tr><td style="padding-right:5px;">Quantity:</td><td style="background-color: #f8f8f8;"> <%= f.select(:quantity, @quantity.map { |value| value }, :include_blank => 'Select Quantity') %></td><tr>
                     </table>
                   </div>
-                  <%= f.submit "Add to Cart", :class => "btn btn-mega btn-primary", :id => "add-to-cart-btn" %>
+                  <%= f.submit "Add to Cart", :class => "btn btn-mega btn-primary", :id => "add-to-cart-btn-female" %>
                 </div>
               </div>
             <% end %>
@@ -67,7 +67,7 @@
                       <%= f.hidden_field :size, :value => "One Size" %>
                     </table>
                   </div>
-                  <%= f.submit "Add to Cart", :class => "btn btn-mega btn-primary", :id => "add-to-cart-btn" %>
+                  <%= f.submit "Add to Cart", :class => "btn btn-mega btn-primary", :id => "add-to-cart-btn-twill" %>
                 </div>
               </div>
             <% end %> 
@@ -90,7 +90,7 @@
                       <%= f.hidden_field :size, :value => "One Size" %>
                     </table>
                   </div>
-                  <%= f.submit "Add to Cart", :class => "btn btn-mega btn-primary", :id => "add-to-cart-btn" %>
+                  <%= f.submit "Add to Cart", :class => "btn btn-mega btn-primary", :id => "add-to-cart-btn-trucker" %>
                 </div>
               </div>
             <% end %>
