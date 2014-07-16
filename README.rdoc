@@ -4,7 +4,13 @@ Online store for selling t-shirts and hats.
 
 Built using
 
+* Rails 4.1.1
+
+* Ruby 2.1.2
+
 * Stripe API
+
+* SendGrid
 
 * Active Admin
 
