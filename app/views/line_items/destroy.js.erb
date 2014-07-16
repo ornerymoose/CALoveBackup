@@ -4,7 +4,7 @@ $('.delete-item').bind('ajax:success', function() {
 		$(this).closest('tr').remove();
 	});	
 	if ($('#checkout-table tr').length == 3) {
-   	$('.checkout, .headers, .headers-item, .total_cell, #customPurchase').fadeOut("slow");
+   	$('.checkout, .headers, .headers-item, .cart_price, .total_cell, #customPurchase').fadeOut("slow");
 	}
 });
     	
