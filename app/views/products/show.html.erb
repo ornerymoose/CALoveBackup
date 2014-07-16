@@ -5,11 +5,11 @@
         <div class="item-image">
           <%= form_for(@product, url: line_items_path(product_id: @product.id), html: {method: "update"}) do |f| %>
             <% if @product.id == 1 %>
-              <div class="item-header-male">
-                <div class="item-title"><%= @product.name %></div>
-                <div class="line"><hr /></div>
-              </div>
               <div class="male-full-container">
+                <div class="item-header-male">
+                  <div class="item-title"><%= @product.name %></div>
+                  <div class="line"><hr /></div>
+                </div>
                 <%= image_tag("https://s3.amazonaws.com/californialove/mens_black_front.jpg", :class=> "item-show-container-male-shirt") %>
                 <div class="male-info">
                   <div class="item-details">
@@ -27,11 +27,11 @@
               </div>
             <% end %>
             <% if @product.id == 2 %>
-              <div class="item-header-female">
-                <div class="item-title"><%= @product.name %></div>
-                <div class="line"><hr /></div>
-              </div>
               <div class="female-full-container">
+                <div class="item-header-female">
+                  <div class="item-title"><%= @product.name %></div>
+                  <div class="line"><hr /></div>
+                </div>
                 <%= image_tag("https://s3.amazonaws.com/californialove/womens_black_front.jpg", :class=> "item-show-container-female-shirt") %>
                 <div class="female-info">
                   <div class="item-details">
@@ -49,11 +49,11 @@
               </div>
             <% end %>
             <% if @product.id == 3 %>
-              <div class="item-header-twill">
-                <div class="item-title"><%= @product.name %></div>
-                <div class="line"><hr /></div>
-              </div>
               <div class="twill-full-container">
+                <div class="item-header-twill">
+                  <div class="item-title"><%= @product.name %></div>
+                  <div class="line"><hr /></div>
+                </div>
                 <%= image_tag("https://s3.amazonaws.com/californialove/twill_hat.jpg", :class=> "item-show-container-twill-hat") %>
                 <div class="twill-info">
                   <div class="item-details">
@@ -72,11 +72,11 @@
               </div>
             <% end %> 
             <% if @product.id == 4 %>
-              <div class="item-header-trucker">
-                <div class="item-title"><%= @product.name %></div>
-                <div class="line"><hr /></div>
-              </div>
               <div class="trucker-full-container">
+                <div class="item-header-trucker">
+                  <div class="item-title"><%= @product.name %></div>
+                  <div class="line"><hr /></div>
+                </div>
                 <%= image_tag("https://s3.amazonaws.com/californialove/trucker_hat.jpg", :class=> "item-show-container-trucker-hat") %>
                 <div class="trucker-info">
                   <div class="item-details">
