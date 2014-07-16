@@ -5,52 +5,83 @@
         <div class="item-image">
           <%= form_for(@product, url: line_items_path(product_id: @product.id), html: {method: "update"}) do |f| %>
             <% if @product.id == 1 %>
-              <%= image_tag("https://s3.amazonaws.com/californialove/mens_black_front.jpg", :class=> "item-show-container-male-shirt") %>
-              <div id="product_selects" class="male-shirt-item-dropdowns">
-                <table>
-                  <tr><td style="padding-right:5px;">Size:</td><td style="background-color: #f8f8f8;"> <%= f.select(:size, @male_shirt_sizes.map { |value| value }, :include_blank => 'Select Size') %></td><tr>
-                  <tr><td style="padding-right:5px;">Color:</td><td style="background-color: #f8f8f8;"> <%= f.select(:color, @shirt_colors.map { |value| value }, :include_blank => 'Select Color') %></td><tr>
-                  <tr><td style="padding-right:5px;">Quantity:</td><td style="background-color: #f8f8f8;"> <%= f.select(:quantity, @quantity.map { |value| value }, :include_blank => 'Select Quantity') %></td><tr>
-                </table>
+              <div class="male-full-container">
+                <%= image_tag("https://s3.amazonaws.com/californialove/mens_black_front.jpg", :class=> "item-show-container-male-shirt") %>
+                <div class="male-info">
+                  <div class="item-details">
+                    <div class="item-title"><%= @product.name %></div>
+                    <div class="item-price">$<%= @product.price %></div>
+                  </div>
+                  <div id="product_selects">
+                    <table>
+                      <tr><td style="padding-right:5px;">Size:</td><td style="background-color: #f8f8f8;"> <%= f.select(:size, @male_shirt_sizes.map { |value| value }, :include_blank => 'Select Size') %></td><tr>
+                      <tr><td style="padding-right:5px;">Color:</td><td style="background-color: #f8f8f8;"> <%= f.select(:color, @shirt_colors.map { |value| value }, :include_blank => 'Select Color') %></td><tr>
+                      <tr><td style="padding-right:5px;">Quantity:</td><td style="background-color: #f8f8f8;"> <%= f.select(:quantity, @quantity.map { |value| value }, :include_blank => 'Select Quantity') %></td><tr>
+                    </table>
+                  </div>
+                  <%= f.submit "Add to Cart", :class => "btn btn-mega btn-primary", :id => "add-to-cart-btn" %>
+                </div>
               </div>
             <% end %>
             <% if @product.id == 2 %>
-              <%= image_tag("https://s3.amazonaws.com/californialove/womens_black_front.jpg", :class=> "item-show-container-female-shirt") %>
-              <div id="product_selects" class="female-shirt-item-dropdowns">
-                <table>
-                  <tr><td style="padding-right:5px;">Size:</td><td style="background-color: #f8f8f8;"> <%= f.select(:size, @female_shirt_sizes.map { |value| value }, :include_blank => 'Select Size') %></td><tr>
-                  <tr><td style="padding-right:5px;">Color:</td><td style="background-color: #f8f8f8;"> <%= f.select(:color, @shirt_colors.map { |value| value }, :include_blank => 'Select Color') %></td><tr>
-                  <tr><td style="padding-right:5px;">Quantity:</td><td style="background-color: #f8f8f8;"> <%= f.select(:quantity, @quantity.map { |value| value }, :include_blank => 'Select Quantity') %></td><tr>
-                </table>
+              <div class="female-full-container">
+                <%= image_tag("https://s3.amazonaws.com/californialove/womens_black_front.jpg", :class=> "item-show-container-female-shirt") %>
+                <div class="female-info">
+                  <div class="item-details">
+                    <div class="item-title"><%= @product.name %></div>
+                    <div class="item-price">$<%= @product.price %></div>
+                  </div>
+                  <div id="product_selects">
+                    <table>
+                      <tr><td style="padding-right:5px;">Size:</td><td style="background-color: #f8f8f8;"> <%= f.select(:size, @female_shirt_sizes.map { |value| value }, :include_blank => 'Select Size') %></td><tr>
+                      <tr><td style="padding-right:5px;">Color:</td><td style="background-color: #f8f8f8;"> <%= f.select(:color, @shirt_colors.map { |value| value }, :include_blank => 'Select Color') %></td><tr>
+                      <tr><td style="padding-right:5px;">Quantity:</td><td style="background-color: #f8f8f8;"> <%= f.select(:quantity, @quantity.map { |value| value }, :include_blank => 'Select Quantity') %></td><tr>
+                    </table>
+                  </div>
+                  <%= f.submit "Add to Cart", :class => "btn btn-mega btn-primary", :id => "add-to-cart-btn" %>
+                </div>
               </div>
             <% end %>
             <% if @product.id == 3 %>
-              <%= image_tag("https://s3.amazonaws.com/californialove/twill_hat.jpg", :class=> "item-show-container-twill-hat") %>
-              <div id="product_selects_twill" class="twill-hat-item-dropdowns">
-                <table>
-                  <tr><td style="padding-right:5px;">Quantity:</td><td style="background-color: #f8f8f8;"> <%= f.select(:quantity, @quantity.map { |value| value }, :include_blank => 'Select Quantity') %></td><tr>
-                  <%= f.hidden_field :color, :value => "Twill" %>
-                  <%= f.hidden_field :size, :value => "One Size" %>
-                </table>
+              <div class="twill-full-container">
+                <%= image_tag("https://s3.amazonaws.com/californialove/twill_hat.jpg", :class=> "item-show-container-twill-hat") %>
+                <div class="twill-info">
+                  <div class="item-details">
+                    <div class="item-title"><%= @product.name %></div>
+                    <div class="item-price">$<%= @product.price %></div>
+                  </div>
+                  <div id="product_selects_twill">
+                    <table>
+                      <tr><td style="padding-right:5px;">Quantity:</td><td style="background-color: #f8f8f8;"> <%= f.select(:quantity, @quantity.map { |value| value }, :include_blank => 'Select Quantity') %></td><tr>
+                      <%= f.hidden_field :color, :value => "Twill" %>
+                      <%= f.hidden_field :size, :value => "One Size" %>
+                    </table>
+                  </div>
+                  <%= f.submit "Add to Cart", :class => "btn btn-mega btn-primary", :id => "add-to-cart-btn" %>
+                </div>
               </div>
             <% end %> 
             <% if @product.id == 4 %>
-              <%= image_tag("https://s3.amazonaws.com/californialove/trucker_hat.jpg", :class=> "item-show-container-trucker-hat") %>
-              <div id="product_selects_trucker" class="trucker-hat-item-dropdowns">
-                <table>
-                  <tr><td style="padding-right:5px;">Quantity:</td><td style="background-color: #f8f8f8;"> <%= f.select(:quantity, @quantity.map { |value| value }, :include_blank => 'Select Quantity') %></td><tr>
-                  <tr><td style="padding-right:5px;">Color:</td><td style="background-color: #f8f8f8;"> <%= f.select(:color, @hat_colors.map { |value| value }, :include_blank => 'Select Color') %></td><tr>
-                   <%= f.hidden_field :size, :value => "One Size" %>
-                </table>
+              <div class="trucker-full-container">
+                <%= image_tag("https://s3.amazonaws.com/californialove/trucker_hat.jpg", :class=> "item-show-container-trucker-hat") %>
+                <div class="trucker-info">
+                  <div class="item-details">
+                    <div class="item-title"><%= @product.name %></div>
+                    <div class="item-price">$<%= @product.price %></div>
+                  </div>
+                  <div id="product_selects_trucker">
+                    <table>
+                      <tr><td style="padding-right:5px;">Quantity:</td><td style="background-color: #f8f8f8;"> <%= f.select(:quantity, @quantity.map { |value| value }, :include_blank => 'Select Quantity') %></td><tr>
+                      <tr><td style="padding-right:5px;">Color:</td><td style="background-color: #f8f8f8;"> <%= f.select(:color, @hat_colors.map { |value| value }, :include_blank => 'Select Color') %></td><tr>
+                      <%= f.hidden_field :size, :value => "One Size" %>
+                    </table>
+                  </div>
+                  <%= f.submit "Add to Cart", :class => "btn btn-mega btn-primary", :id => "add-to-cart-btn" %>
+                </div>
               </div>
             <% end %>
-            <%= f.submit "Add to Cart", :class => "btn btn-mega btn-primary twill-mobile trucker-mobile", :id => "add-to-cart-btn" %>
           <% end %>
         </div>
-      <div class="item-details">
-        <div class="item-title"><%= @product.name %></div>
-        <div class="item-price">$<%= @product.price %></div>
-      </div>
     </div>
   </body>
 </html>

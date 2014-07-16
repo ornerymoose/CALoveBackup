@@ -17,6 +17,28 @@
 /* products show page begin */
 
 #products-show {
+  .male-full-container, .female-full-container, .twill-full-container, .trucker-full-container {
+      margin-left: auto;
+      margin-right: auto;
+      width: 700px;
+  }
+  .male-info, .female-info {
+    height: 475px;
+    width: 500px;
+    position: absolute;
+    left: 880px;
+    top: 220px;
+  }
+  .twill-full-container, .trucker-full-container {
+    width: 875px;
+  }
+  .twill-info, .trucker-info {
+    height: 475px;
+    width: 500px;
+    position: absolute;
+    left: 1030px;
+    top: 220px;
+  }
   html, body
   {
     background: none;
@@ -65,35 +87,12 @@
   }
   .item-details
   {
-    position: absolute;
-    left: 650px;
-    top: 220px;
     width: 100%;
   }
   #add-to-cart-btn {
-    position: absolute;
+    /*position: absolute;
     left: 650px;
-    top: 500px;
-  }
-  .male-shirt-item-dropdowns {
-    position: absolute;
-    left: 650px;
-    top: 381px;
-  }
-  .female-shirt-item-dropdowns {
-    position: absolute;
-    left: 650px;
-    top: 381px;
-  }
-  .trucker-hat-item-dropdowns {
-    position: absolute;
-    left: 650px;
-    top: 400px;
-  }
-  .twill-hat-item-dropdowns {
-    position: absolute;
-    left: 650px;
-    top: 415px;
+    top: 500px;*/
   }
   .line {
     margin: -30px 0px 0px 5px;
