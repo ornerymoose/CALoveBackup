@@ -20,24 +20,53 @@
   .male-full-container, .female-full-container, .twill-full-container, .trucker-full-container {
       margin-left: auto;
       margin-right: auto;
-      width: 744px;
+      width: 736px;
+  }
+  .female-full-container {
+    width: 764px;
   }
   .male-info, .female-info {
     height: 345px;
     width: 360px;
-    position: absolute;
-    top: 220px;
-    left: 635px;
+    float: right;
+    margin-top: -13px;
+  }
+  .item-show-container-male-shirt {
+    width: 356px;
+    height: 475px;
+    background-size: cover;
+    float: left;
+    margin-right: 20px;
+  }
+  .item-show-container-female-shirt {
+    width: 384px;
+    height: 500px;
+    background-size: cover;
+    margin-right: 20px;
+    float: left;
   }
   .twill-full-container, .trucker-full-container {
-    width: 835px;
+    width: 855px;
   }
   .twill-info, .trucker-info {
     height: 475px;
     width: 200px;
-    position: absolute;
-    left: 900px;
-    top: 220px;
+    float: right;
+    margin-top: -13px;
+  }
+  .item-show-container-twill-hat
+  {
+    height:475px;
+    width: 635px;
+    float: left;
+    margin-right: 20px;
+    background-size: cover;
+  }
+  .item-show-container-trucker-hat
+  {
+    height:475px;
+    width: 635px;
+    background-size: cover;
   }
   html, body
   {
@@ -63,28 +92,7 @@
     margin-left: auto;
     margin-right: auto;
   }
-  .item-show-container-male-shirt {
-    width: 356px;
-    height: 475px;
-    background-size: cover;
-  }
-  .item-show-container-female-shirt {
-    width: 384px;
-    height: 500px;
-    background-size: cover;
-  }
-   .item-show-container-twill-hat
-  {
-    height:475px;
-    width: 635px;
-    background-size: cover;
-  }
-  .item-show-container-trucker-hat
-  {
-    height:475px;
-    width: 635px;
-    background-size: cover;
-  }
+  
   .item-details
   {
     width: 100%;
