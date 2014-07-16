@@ -20,24 +20,23 @@
   .male-full-container, .female-full-container, .twill-full-container, .trucker-full-container {
       margin-left: auto;
       margin-right: auto;
-      width: 650px;
+      width: 744px;
   }
   .male-info, .female-info {
-    height: 475px;
-    width: 500px;
+    height: 345px;
+    width: 360px;
     position: absolute;
-    /*left: 812px;*/
-    left: 857px;
     top: 220px;
+    left: 635px;
   }
   .twill-full-container, .trucker-full-container {
-    width: 775px;
+    width: 835px;
   }
   .twill-info, .trucker-info {
     height: 475px;
     width: 200px;
     position: absolute;
-    left: 1030px;
+    left: 900px;
     top: 220px;
   }
   html, body
