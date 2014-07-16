@@ -49,11 +49,11 @@
     float: left;
   }
   .twill-full-container, .trucker-full-container {
-    width: 855px;
+    width: 875px;
   }
   .twill-info, .trucker-info {
     height: 475px;
-    width: 200px;
+    width: 220px;
     float: right;
     margin-top: -13px;
   }
@@ -69,6 +69,8 @@
   {
     height:475px;
     width: 635px;
+    float: left;
+    margin-right: 20px;
     background-size: cover;
   }
   html, body
