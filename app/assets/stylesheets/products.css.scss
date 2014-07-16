@@ -115,9 +115,43 @@
     font-size: 42px;
     font-weight: 300;
   }
+  .item-header-male {
+    width: 100%;
+    margin-left: 553px;
+    .line{
+      margin-top: -20px;
+      width: 559px;
+    }
+  }
+  .item-header-female {
+    width: 100%;
+    margin-left: 481px;
+    .line {
+      margin-top: -20px;
+      width: 587px;
+    }
+  }
+  .item-header-twill {
+    width: 100%;
+    margin-left: 426px;
+    .line {
+      margin-top: -20px;
+      width: 840px;
+    }
+  }
+  .item-header-trucker {
+    width: 100%;
+    margin-left: 426px;
+    .line {
+      margin-top: -20px;
+      width: 840px;
+    }
+  }
   .item-price {
     font-size: 36px;
     font-weight: 100;
+    padding-top: 4px;
+    /*margin-left: 60px;*/
   }
   .btn-mega {
     padding: 18px 28px;
