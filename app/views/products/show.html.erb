@@ -52,7 +52,8 @@
                   </div>
                   <div id="product_selects_twill">
                     <table>
-                      <tr><td style="padding-right:5px;">Quantity:</td><td style="background-color: #f8f8f8;"> <%= f.select(:quantity, @quantity.map { |value| value }, :include_blank => 'Select Quantity') %></td><tr>
+                      <tr><td style="padding-right:5px;">Quantity:</td><td style="background-color: #f8f8f8;"> <%= f.select(:quantity, @quantity.map { |value| value }, :include_blank => 'Select Quantity') %></td></tr>
+                      <tr><td style="padding: 30px;"></td></tr>
                       <%= f.hidden_field :color, :value => "Twill" %>
                       <%= f.hidden_field :size, :value => "One Size" %>
                     </table>
@@ -72,7 +73,8 @@
                   <div id="product_selects_trucker">
                     <table>
                       <tr><td style="padding-right:5px;">Quantity:</td><td style="background-color: #f8f8f8;"> <%= f.select(:quantity, @quantity.map { |value| value }, :include_blank => 'Select Quantity') %></td><tr>
-                      <tr><td style="padding-right:5px;">Color:</td><td style="background-color: #f8f8f8;"> <%= f.select(:color, @hat_colors.map { |value| value }, :include_blank => 'Select Color') %></td><tr>
+                      <tr><td style="padding-right:5px;">Color:</td><td style="background-color: #f8f8f8;"> <%= f.select(:color, @hat_colors.map { |value| value }, :include_blank => 'Select Color') %></td></tr>
+                       <tr><td style="padding: 15px;"></td></tr>
                       <%= f.hidden_field :size, :value => "One Size" %>
                     </table>
                   </div>
