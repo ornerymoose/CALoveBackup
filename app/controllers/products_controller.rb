@@ -4,17 +4,19 @@ class ProductsController < ApplicationController
   def index
     @products = Product.all
     @cart = current_cart
-    #might need to switch @cart back to cart
   end
 
   def welcome
     @products = Product.all
     @cart = current_cart
-    #might need to switch @cart back to cart
   end
 
   def customer_cart
     @cart = current_cart
+  end
+
+  def ping
+    render text: 'ping'
   end
 
   # GET /products/1

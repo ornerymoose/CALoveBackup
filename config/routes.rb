@@ -11,6 +11,8 @@ Rails.application.routes.draw do
   match 'contact_us' => 'pages#new', :as => 'contact_us', :via => :get
   match 'contact_us' => 'pages#create', :as => 'contact_uss', :via => :post
 
+  get "ping", :to => "products#ping", :as => "ping"
+
   resources :products
   resources :line_items
   resources :charges
