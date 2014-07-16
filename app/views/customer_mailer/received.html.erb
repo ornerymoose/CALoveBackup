@@ -1,8 +1,8 @@
-<h3>Here are the items <%= @charge.card.name %> (<%= @charge.receipt_email %>) bought:</h3>
+<h3>Hi <%= @charge.card.name %>,
+<p>Thank you for your purchase from CALove. You have ordered the following: </p>
 <ul>
 	<% @cart.line_items.each do |item| %>
-	<li><%= item.quantity %> &times; <%= item.size %> <%= item.color %> <%= item.product.name %><br>
-	at $<%= item.product.price %> each</li>
+	<li><%= item.quantity %> &times; <%= item.size %> <%= item.color %> <%= item.product.name %></li>
 	<% end %>
 </ul>  
 <p>Total Amount Spent: $<%= @cart.total_price %></p>
