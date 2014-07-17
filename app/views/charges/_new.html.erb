@@ -10,7 +10,7 @@
               </div>
             <script>
               var handler = StripeCheckout.configure({
-                key: '<%= ENV["PUBLISHABLE_TEST"] %>',
+                key: '<%= ENV["PUBLISHABLE_LIVE"] %>',
                 image: 'https://s3.amazonaws.com/californialove/ca_love_logo.png',
                 token: function(token, args) {
                   console.log(args);
