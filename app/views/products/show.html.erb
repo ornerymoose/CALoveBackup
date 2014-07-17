@@ -15,7 +15,7 @@
                   <div class="item-details">
                     <div class="item-price ipm">$<%= @product.price %></div>
                   </div>
-                  <div id="product_selects">
+                  <div id="product_selects_male">
                     <table>
                       <tr><td style="background-color: #f8f8f8;"> <%= f.select(:size, @male_shirt_sizes.map { |value| value }, :include_blank => 'Select Size') %></td><tr>
                       <tr><td style="background-color: #f8f8f8;"> <%= f.select(:color, @shirt_colors.map { |value| value }, :include_blank => 'Select Color') %></td><tr>
@@ -37,7 +37,7 @@
                   <div class="item-details">
                     <div class="item-price ipf">$<%= @product.price %></div>
                   </div>
-                  <div id="product_selects">
+                  <div id="product_selects_female">
                     <table>
                       <tr><td style="background-color: #f8f8f8;"> <%= f.select(:size, @female_shirt_sizes.map { |value| value }, :include_blank => 'Select Size') %></td><tr>
                       <tr><td style="background-color: #f8f8f8;"> <%= f.select(:color, @shirt_colors.map { |value| value }, :include_blank => 'Select Color') %></td><tr>

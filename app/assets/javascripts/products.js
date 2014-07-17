@@ -20,6 +20,30 @@ $(function(){
     } 
   });
 
+  $('#product_selects_trucker #product_color').change(function(){
+    if ($('#product_color').val() == "Black") {
+      $('.item-show-container-trucker-hat').attr('src','https://s3.amazonaws.com/californialove/trucker_hat_black.jpg');
+    } else {
+       $('.item-show-container-trucker-hat').attr('src','https://s3.amazonaws.com/californialove/trucker_hat.jpg');
+    }
+  });
+
+  $('#product_selects_male #product_color').change(function(){
+    if ($('#product_color').val() == "White") {
+      $('.item-show-container-male-shirt').attr('src','https://s3.amazonaws.com/californialove/mens_white_front.jpg');
+    } else {
+       $('.item-show-container-male-shirt').attr('src','https://s3.amazonaws.com/californialove/mens_black_front.jpg');
+    }
+  });
+
+  $('#product_selects_female #product_color').change(function(){
+    if ($('#product_color').val() == "White") {
+      $('.item-show-container-female-shirt').attr('src','https://s3.amazonaws.com/californialove/womens_white_front.jpg');
+    } else {
+       $('.item-show-container-female-shirt').attr('src','https://s3.amazonaws.com/californialove/womens_black_front.jpg');
+    }
+  });
+
   $('#product_selects_trucker').change(function() {
     if (!$('#product_quantity').val() || !$('#product_color').val()) {
       $addToCart.prop('disabled', true);
@@ -28,7 +52,7 @@ $(function(){
     }
   });
 
-  $('#product_selects').change(function() {
+  $('#product_selects_male, #product_selects_female').change(function() {
     if (!$('#product_quantity').val() || !$('#product_color').val() || !$('#product_size').val()) {
       $addToCart.prop('disabled', true);
     } else {
