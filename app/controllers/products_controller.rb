@@ -24,11 +24,11 @@ class ProductsController < ApplicationController
   def show
     @product = Product.find(params[:id])
     @cart = current_cart
-    @male_shirt_sizes = {'Small' => 'Small', 'Medium' => 'Medium', 'Large' => 'Large', 'Extra Large' => 'Extra Large'}
-    @female_shirt_sizes = {'Small' => 'Small', 'Medium' => 'Medium', 'Large' => 'Large'}
-    @shirt_colors = {'White' => 'White', 'Black' => 'Black'}
-    @hat_colors = {'White' => 'White', 'Black' => 'Black'}
-    @quantity = {'1' => '1', '2' => '2', '3' => '3', '4' => '4', '5' => '5'}
+    @male_shirt_sizes = {'Select Size' => 'Small', 'Small' => 'Small', 'Medium' => 'Medium', 'Large' => 'Large', 'Extra Large' => 'Extra Large'}
+    @female_shirt_sizes = {'Select Size' => 'Small', 'Small' => 'Small', 'Medium' => 'Medium', 'Large' => 'Large'}
+    @shirt_colors = {'Select Color' => 'Black', 'White' => 'White', 'Black' => 'Black'}
+    @hat_colors = {'Select Color' => 'White','White' => 'White', 'Black' => 'Black'}
+    @quantity = {'Select Quantity' => '1', '1' => '1', '2' => '2', '3' => '3', '4' => '4', '5' => '5'}
   end
 
   # GET /products/new

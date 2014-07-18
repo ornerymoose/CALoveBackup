@@ -17,9 +17,9 @@
                   </div>
                   <div id="product_selects_male">
                     <table>
-                      <tr><td style="background-color: #f8f8f8;"> <%= f.select(:size, @male_shirt_sizes.map { |value| value }, :include_blank => 'Select Size') %></td><tr>
-                      <tr><td style="background-color: #f8f8f8;"> <%= f.select(:color, @shirt_colors.map { |value| value }, :include_blank => 'Select Color') %></td><tr>
-                      <tr><td style="background-color: #f8f8f8;"> <%= f.select(:quantity, @quantity.map { |value| value }, :include_blank => 'Select Quantity') %></td><tr>
+                      <tr><td style="background-color: #f8f8f8;"> <%= f.select(:size, @male_shirt_sizes.map { |value| value }) %></td><tr>
+                      <tr><td style="background-color: #f8f8f8;"> <%= f.select(:color, @shirt_colors.map { |value| value }) %></td><tr>
+                      <tr><td style="background-color: #f8f8f8;"> <%= f.select(:quantity, @quantity.map { |value| value }) %></td><tr>
                     </table>
                   </div>
                   <%= f.submit "Add to Cart", :class => "btn btn-mega btn-primary", :id => "add-to-cart-btn-male" %>
@@ -39,9 +39,9 @@
                   </div>
                   <div id="product_selects_female">
                     <table>
-                      <tr><td style="background-color: #f8f8f8;"> <%= f.select(:size, @female_shirt_sizes.map { |value| value }, :include_blank => 'Select Size') %></td><tr>
-                      <tr><td style="background-color: #f8f8f8;"> <%= f.select(:color, @shirt_colors.map { |value| value }, :include_blank => 'Select Color') %></td><tr>
-                      <tr><td style="background-color: #f8f8f8;"> <%= f.select(:quantity, @quantity.map { |value| value }, :include_blank => 'Select Quantity') %></td><tr>
+                      <tr><td style="background-color: #f8f8f8;"> <%= f.select(:size, @female_shirt_sizes.map { |value| value }) %></td><tr>
+                      <tr><td style="background-color: #f8f8f8;"> <%= f.select(:color, @shirt_colors.map { |value| value }) %></td><tr>
+                      <tr><td style="background-color: #f8f8f8;"> <%= f.select(:quantity, @quantity.map { |value| value }) %></td><tr>
                     </table>
                   </div>
                   <%= f.submit "Add to Cart", :class => "btn btn-mega btn-primary", :id => "add-to-cart-btn-female" %>
@@ -61,7 +61,7 @@
                   </div>
                   <div id="product_selects_twill">
                     <table>
-                      <tr><td style="background-color: #f8f8f8;"> <%= f.select(:quantity, @quantity.map { |value| value }, :include_blank => 'Select Quantity') %></td></tr>
+                      <tr><td style="background-color: #f8f8f8;"> <%= f.select(:quantity, @quantity.map { |value| value }) %></td></tr>
                       <tr><td style="padding: 30px;"></td></tr>
                       <%= f.hidden_field :color, :value => "Twill" %>
                       <%= f.hidden_field :size, :value => "One Size" %>
@@ -84,8 +84,8 @@
                   </div>
                   <div id="product_selects_trucker">
                     <table>
-                      <tr><td style="background-color: #f8f8f8;"> <%= f.select(:quantity, @quantity.map { |value| value }, :include_blank => 'Select Quantity') %></td><tr>
-                      <tr><td style="background-color: #f8f8f8;"> <%= f.select(:color, @hat_colors.map { |value| value }, :include_blank => 'Select Color') %></td></tr>
+                      <tr><td style="background-color: #f8f8f8;"> <%= f.select(:quantity, @quantity.map { |value| value }) %></td><tr>
+                      <tr><td style="background-color: #f8f8f8;"> <%= f.select(:color, @hat_colors.map { |value| value }) %></td></tr>
                        <tr><td style="padding: 15px;"></td></tr>
                       <%= f.hidden_field :size, :value => "One Size" %>
                     </table>
