@@ -1,7 +1,20 @@
 $(function(){
 
+  //male tshirt reset dropdowns
+  $('#product_selects_male #product_size').val('Small');
   $('#product_selects_male #product_color').val('Black');
+  $('#product_selects_male #product_quantity').val('1');
+
+  //female tshirt reset dropdowns
+  $('#product_selects_female #product_size').val('Small');
   $('#product_selects_female #product_color').val('Black');
+  $('#product_selects_female #product_quantity').val('1');
+
+  //twill hat reset dropdown
+  $('#product_selects_twill #product_quantity').val('1');
+
+  //trucker hat reset dropdowns
+  $('#product_selects_trucker #product_quantity').val('1');
   $('#product_selects_trucker #product_color').val('White');
 
   if ($('.top-bottom-padding').length == 0) {
