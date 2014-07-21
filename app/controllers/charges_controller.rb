@@ -39,7 +39,7 @@ class ChargesController < ApplicationController
     end
 
     respond_to do |format|
-      CustomerMailer.received(@cart, @charge, @customer.email).deliver
+      #CustomerMailer.received(@cart, @charge, @customer.email).deliver
       CustomerMailer.sent(@cart, @charge, ENV['ACTION_MAILER_TY']).deliver
       format.html { redirect_to charge_path(@cart, {customer_id: @customer.id}) }
       format.json { head :ok }
