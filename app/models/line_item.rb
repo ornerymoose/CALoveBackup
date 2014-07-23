@@ -6,4 +6,12 @@ class LineItem < ActiveRecord::Base
     product.price * quantity
   end
 
+  def ind_price
+    product.price
+  end
+
+  def prod_color
+    product.color
+  end
+
 end
