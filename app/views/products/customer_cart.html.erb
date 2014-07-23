@@ -23,6 +23,8 @@
 				<% if number_to_currency(@cart.total_price) == "$0.00" %>
 				<% else %>
 					<%= render "charges/new" %>
+					<br>
+					<%= link_to(image_tag("https://www.paypal.com/en_US/i/btn/btn_xpressCheckout.gif"), @cart.paypal_url(root_url), :id => 'paypalPurchase') %>
 				<% end %>
 	 		</div>
     </div>
