@@ -169,16 +169,16 @@
     margin-bottom: 140px;
   }
   #add-to-cart-btn-male {
-    margin-top: 167px;
+    margin-top: 127px;
   }
   #add-to-cart-btn-female {
-    margin-top: 162px;
+    margin-top: 122px;
   }
   #add-to-cart-btn-twill {
     margin-top: 114px;
   }
   #add-to-cart-btn-trucker {
-    margin-top: 131px;
+    margin-top: 111px;
   }
   .btn-mega {
     padding: 18px 28px;
@@ -188,18 +188,9 @@
     -moz-border-radius: 8px;
     border-radius: 8px;
   }
-   #product_quantity, #product_size, #product_color  {
-    -moz-user-select: none;
-    width: 122px;
-    padding: 5px;
-    font-size: 16px;
-    line-height: 1;
-    border: 0;
-    border-radius: 0;
-    height: 34px;
-    -webkit-appearance: none;
-    -moz-appearance: window; 
-   }
+  .form-control {
+    width: 170px;
+  }
 }
 
 /* products show page end */
