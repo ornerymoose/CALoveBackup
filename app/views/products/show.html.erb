@@ -16,11 +16,11 @@
                     <div class="item-price ipm">$<%= @product.price %></div>
                   </div>
                   <div id="product_selects_male">
-                    <%= f.select(:size, @male_shirt_sizes.map { |value| value }, {}, { :class => 'form-control' }) %>
+                    <%= f.select(:size, @male_shirt_sizes.map { |value| value }, {}, { :class => 'form-control' }) %><span class="caret caret-male-size"></span>
                     <br><br>
-                    <%= f.select(:color, @shirt_colors.map { |value| value }, {}, { :class => 'form-control' }) %>
+                    <%= f.select(:color, @shirt_colors.map { |value| value }, {}, { :class => 'form-control' }) %><span class="caret caret-male-color"></span>
                     <br><br>
-                    <%= f.select(:quantity, @quantity.map { |value| value }, {}, { :class => 'form-control' }) %>
+                    <%= f.select(:quantity, @quantity.map { |value| value }, {}, { :class => 'form-control' }) %><span class="caret caret-male-quantity"></span>
                   </div>
                   <%= f.submit "Add to Cart", :class => "btn btn-mega btn-primary", :id => "add-to-cart-btn-male" %>
                 </div>
@@ -38,11 +38,11 @@
                     <div class="item-price ipf">$<%= @product.price %></div>
                   </div>
                   <div id="product_selects_female">
-                    <%= f.select(:size, @female_shirt_sizes.map { |value| value }, {}, { :class => 'form-control' }) %>
+                    <%= f.select(:size, @female_shirt_sizes.map { |value| value }, {}, { :class => 'form-control' }) %><span class="caret caret-female-size"></span>
                     <br><br>
-                    <%= f.select(:color, @shirt_colors.map { |value| value }, {}, { :class => 'form-control' }) %>
+                    <%= f.select(:color, @shirt_colors.map { |value| value }, {}, { :class => 'form-control' }) %><span class="caret caret-female-color"></span>
                     <br><br>
-                    <%= f.select(:quantity, @quantity.map { |value| value }, {}, { :class => 'form-control' }) %>
+                    <%= f.select(:quantity, @quantity.map { |value| value }, {}, { :class => 'form-control' }) %><span class="caret caret-female-quantity"></span>
                   </div>
                   <%= f.submit "Add to Cart", :class => "btn btn-mega btn-primary", :id => "add-to-cart-btn-female" %>
                 </div>
@@ -60,7 +60,7 @@
                     <div class="item-price iptwill">$<%= @product.price %></div>
                   </div>
                   <div id="product_selects_twill">
-                    <%= f.select(:quantity, @quantity.map { |value| value }, {}, { :class => 'form-control' }) %>
+                    <%= f.select(:quantity, @quantity.map { |value| value }, {}, { :class => 'form-control' }) %><span class="caret caret-twill-quantity"></span>
                     <table>
                       <tr><td style="padding: 30px;"></td></tr>
                         <%= f.hidden_field :color, :value => "Twill" %>
@@ -83,9 +83,9 @@
                     <div class="item-price iptrucker">$<%= @product.price %></div>
                   </div>
                   <div id="product_selects_trucker">
-                    <%= f.select(:quantity, @quantity.map { |value| value }, {}, { :class => 'form-control' }) %>
+                    <%= f.select(:quantity, @quantity.map { |value| value }, {}, { :class => 'form-control' }) %><span class="caret caret-trucker-quantity"></span>
                     <br><br>
-                    <%= f.select(:color, @hat_colors.map { |value| value }, {}, { :class => 'form-control' }) %>
+                    <%= f.select(:color, @hat_colors.map { |value| value }, {}, { :class => 'form-control' }) %><span class="caret caret-trucker-color"></span>
                     <table>
                       <tr><td style="padding: 15px;"></td></tr>
                       <%= f.hidden_field :size, :value => "One Size" %>
