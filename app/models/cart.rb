@@ -20,15 +20,14 @@ class Cart < ActiveRecord::Base
       :business => 'calove.help@gmail.com',
       :cmd => '_cart',
       :upload => 1,
-      :return => return_url,
-      :invoice => id
+      :return => return_url
     }
     # These values set up the details for the item on paypal.
     line_items.each_with_index do |item, index|
        values.merge!({
         "amount_#{index+1}" => item.ind_price,
-        "item_name_#{index+1}" => item.product.name,
-        "item_color" => item.prod_color,
+        "item_name_#{index+1}" => "#{item.size} #{item.color} #{item.product.name}",
+        "item_number_#{index+1}" => item.id,
         "quantity_#{index+1}" => item.quantity
       })
     end
