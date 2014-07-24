@@ -10,6 +10,8 @@ Built using
 
 * Stripe API
 
+* PayPal Standard Checkout
+
 * SendGrid
 
 * Active Admin
