@@ -10,8 +10,4 @@ class LineItem < ActiveRecord::Base
     product.price
   end
 
-  def prod_color
-    product.color
-  end
-
 end
