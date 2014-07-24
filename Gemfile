@@ -13,7 +13,6 @@ gem 'spring',        group: :development
 gem 'jquery-turbolinks'
 gem 'newrelic_rpm'
 
-gem 'activemerchant'
 #gem 'sprockets_better_errors'
 gem 'google-analytics-rails'
 
