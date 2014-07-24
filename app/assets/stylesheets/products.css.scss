@@ -190,19 +190,12 @@
   }
   .form-control {
     width: 170px;
-    -moz-appearance: none;
     -webkit-appearance: none;
-   appearance: none;
   }
-  .caret, .caret-male-size, .caret-male-color, .caret-male-quantity,
-  .caret-female-size, .caret-female-color, .caret-female-quantity, .caret-twill-quantity,
-  .caret-trucker-quantity, .caret-trucker-color {
-    margin-left: 156px;
-    margin-top: -56px;
+  .caret {
+    margin-left: 157px;
+    margin-top: -58px;
   }
-  /*.caret-male-color {
-    margin-top: -30px;
-  }*/
 }
 
 /* products show page end */
