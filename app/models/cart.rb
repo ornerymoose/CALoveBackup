@@ -27,7 +27,7 @@ class Cart < ActiveRecord::Base
        values.merge!({
         "amount_#{index+1}" => item.ind_price,
         "item_name_#{index+1}" => "#{item.size} #{item.color} #{item.product.name}",
-        "item_number_#{index+1}" => item.id,
+        "item_number_#{index+1}" => item.filler,
         "quantity_#{index+1}" => item.quantity
       })
     end

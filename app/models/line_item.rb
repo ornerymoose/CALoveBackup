@@ -10,4 +10,8 @@ class LineItem < ActiveRecord::Base
     product.price
   end
 
+  def filler
+    product.color
+  end
+
 end
