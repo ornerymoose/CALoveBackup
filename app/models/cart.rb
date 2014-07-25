@@ -17,7 +17,7 @@ class Cart < ActiveRecord::Base
   def paypal_url(return_url)
     values = {
       # get it form your http://sandbox.paypal.com account
-      :business => 'calove.help@gmail.com',
+      :business => 'lvp707@gmail.com',
       :cmd => '_cart',
       :upload => 1,
       :return => return_url
@@ -31,7 +31,7 @@ class Cart < ActiveRecord::Base
         "quantity_#{index+1}" => item.quantity
       })
     end
-    "https://www.sandbox.paypal.com/cgi-bin/webscr?" + values.to_query
+    "https://www.paypal.com/cgi-bin/webscr?" + values.to_query
   end
 
 end
