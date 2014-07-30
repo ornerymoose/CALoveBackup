@@ -29,7 +29,8 @@ class LineItemsController < InheritedResources::Base
     @line_item.destroy
   
     respond_to do |format|
-      format.js {}
+      format.html { redirect_to products_customer_cart_url }
+      #format.js {} add this back in when ajax is properly working
     end
   end
 

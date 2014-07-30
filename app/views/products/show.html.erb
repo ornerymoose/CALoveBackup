@@ -1,6 +1,6 @@
 <html>
   <body id="products-show">
-  	<div class="wrapper-show">
+    <div class="wrapper-show">
       <div class="push-show"></div>
         <div class="item-image">
           <%= form_for(@product, url: line_items_path(product_id: @product.id), html: {method: "update"}) do |f| %>

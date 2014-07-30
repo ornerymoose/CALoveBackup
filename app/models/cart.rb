@@ -16,13 +16,11 @@ class Cart < ActiveRecord::Base
 
   def paypal_url(return_url)
     values = {
-      # get it form your http://sandbox.paypal.com account
       :business => 'lvp707@gmail.com',
       :cmd => '_cart',
       :upload => 1,
       :return => return_url
     }
-    # These values set up the details for the item on paypal.
     line_items.each_with_index do |item, index|
        values.merge!({
         "amount_#{index+1}" => item.ind_price,

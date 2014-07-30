@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <%= analytics_init if Rails.env.production? %>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <%= analytics_init if Rails.env.production? %>
   <%= favicon_link_tag 'https://s3.amazonaws.com/californialove/favicon_new.ico' %>
   <title>CALove</title>
   <meta charset="utf-8">
@@ -16,7 +16,6 @@
   <![endif]-->
 </head>
 <body>
-
     <%= render "layouts/header" %>  
     <%= yield %>
     <%= render "layouts/footer" %>

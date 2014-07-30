@@ -16,7 +16,7 @@
 						<th class="headers">Price</th>
 					</tr>
 					<% @cart.line_items.each do |item| %>
-    				<tr class="top-bottom-padding" style="border-bottom: 1px solid #eee;"><td style="padding-right:33px;"><%= item.product.name %></td><td style="padding-right:35px;"><%= item.size %></td><td style="padding-right:35px;"><%= item.color %></td><td style="padding-right:35px;"><%= item.quantity %></td><td><%= link_to 'Remove', item, method: :delete, remote: true, :class => 'delete-item' %> </td><td style="padding-right:35px;">$<%= item.product.price %></td></tr>
+    				<tr class="top-bottom-padding" style="border-bottom: 1px solid #eee;"><td style="padding-right:33px;"><%= item.product.name %></td><td style="padding-right:35px;"><%= item.size %></td><td style="padding-right:35px;"><%= item.color %></td><td style="padding-right:35px;"><%= item.quantity %></td><td><%= link_to 'Remove', item, method: :delete %> </td><td style="padding-right:35px;">$<%= item.product.price %></td></tr>
   				<% end %>
 				  <td style="padding: 20px 0px 20px 0px;" class="total_cell">Total: <%= render @cart %> </td>
 				</table>

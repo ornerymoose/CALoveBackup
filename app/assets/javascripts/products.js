@@ -1,5 +1,5 @@
 $(function(){
-
+  
   //male tshirt reset dropdowns
   $('#product_selects_male #product_size').val('Small');
   $('#product_selects_male #product_color').val('Black');
