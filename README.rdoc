@@ -12,6 +12,8 @@ Built using
 
 * PayPal Standard Checkout
 
+* AWS S3
+
 * SendGrid
 
 * Active Admin
