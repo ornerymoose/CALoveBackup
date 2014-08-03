@@ -32,4 +32,4 @@ gem 'activeadmin', github: 'gregbell/active_admin'
 gem 'polyamorous',      github: 'activerecord-hackery/polyamorous'  # Require for ActiveAdmin to work with Rails 4.1
 gem 'ransack',          github: 'activerecord-hackery/ransack'      # Require for ActiveAdmin to work with Rails 4.1
 gem 'formtastic',       github: 'justinfrench/formtastic'           # Require for ActiveAdmin to work with Rails 4.1
-gem 'devise'    
+gem 'devise' 
