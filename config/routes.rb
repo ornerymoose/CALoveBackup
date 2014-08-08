@@ -9,6 +9,7 @@ Rails.application.routes.draw do
   get "charges/express_checkout", :as => "express_checkout"
 
   match 'contact_us' => 'pages#new', :as => 'contact_us', :via => :get
+  match 'contact_us' => 'pages#create', :as => 'contact_uss', :via => :post
 
   get "ping", :to => "products#ping", :as => "ping"
 
